@@ -1,0 +1,473 @@
+function sortingFunction1(arr11){
+    console.log(arr11);
+    // id=selectSort1,selectSort2,selectSort3,selectSort4....
+    let arr1=[];
+    let arr2=[];
+    let a=document.querySelector("#selectSort1").value;
+    let b=document.querySelector("#selectSort2").value;
+    let c=document.querySelector("#selectSort3").value;
+    let d=document.querySelector("#selectSort4").value;
+    let f=document.querySelector("#selectSort6").value;
+    let g=document.querySelector("#selectSort7").value;
+    let h=document.querySelector("#selectSort8").value;
+    
+    // condition2
+    if(b!="Product type"){
+            arr11.forEach(function(ele){
+                if(ele.Product==b) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr11;
+    }
+    // condition3
+    arr2=arr1;
+    arr1=[];
+    if(c!="Brand" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Brand==c) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition4
+    arr2=arr1;
+    arr1=[];
+    if(d!="Body Fit" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.BodyFit==d) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition6
+    arr2=arr1;
+    arr1=[];
+    if(f!="Color" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Color==f) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition7
+    arr2=arr1;
+    arr1=[];
+    if(g!="Style" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Style==g) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition8
+    arr2=arr1;
+    arr1=[];
+    if(h!="Size" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Size==h) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    displayShoeMen(arr1);
+}
+function displaySortBar2(){
+    sortBar.innerHTML="";
+    let sel1=document.createElement("select");
+    let sel2=document.createElement("select");
+    let sel3=document.createElement("select");
+    let sel4=document.createElement("select");
+    let sel5=document.createElement("select");
+    let sel6=document.createElement("select");
+    let sel7=document.createElement("select");
+    let sel8=document.createElement("select");
+
+    sel1.setAttribute("id","selectSort1");
+    sel2.setAttribute("id","selectSort2");
+    sel3.setAttribute("id","selectSort3");
+    sel4.setAttribute("id","selectSort4");
+    sel5.setAttribute("id","selectSort5");
+    sel6.setAttribute("id","selectSort6");
+    sel7.setAttribute("id","selectSort7");
+    sel8.setAttribute("id","selectSort8");
+
+    let sel1option1=document.createElement("option");
+    let sel1option2=document.createElement("option");
+    let sel1option3=document.createElement("option");
+
+    sel1option1.value="Sort by Price";
+    sel1option2.value="High to Low";
+    sel1option3.value="Low to High";
+
+    sel1option1.innerText="Sort by Price";
+    sel1option2.innerText="High to Low";
+    sel1option3.innerText="Low to High";
+
+    // second select
+    let sel2option1=document.createElement("option");
+    let sel2option2=document.createElement("option");
+    let sel2option3=document.createElement("option");
+    let sel2option4=document.createElement("option");
+    let sel2option5=document.createElement("option");
+    let sel2option6=document.createElement("option");
+    let sel2option7=document.createElement("option");
+    let sel2option8=document.createElement("option");
+    let sel2option9=document.createElement("option");
+    let sel2option10=document.createElement("option");
+    let sel2option11=document.createElement("option");
+
+
+
+    sel2option1.value="Product type";
+    sel2option2.value="T-shirts & Vests";
+    sel2option3.value="Shirts";
+    sel2option4.value="Shorts";
+    sel2option5.value="Swimwear";
+    sel2option6.value="Hoodies & Sweatshirts";
+    sel2option7.value="Jackets & Coats";
+    sel2option8.value="Jeans";
+    sel2option9.value="Joggers";
+    sel2option10.value="Sportswear";
+    sel2option11.value="Underwear";
+
+    sel2option1.innerText="Product type";
+    sel2option2.innerText="T-shirts & Vests";
+    sel2option3.innerText="Shirts";
+    sel2option4.innerText="Shorts";
+    sel2option5.innerText="Swimwear";
+    sel2option6.innerText="Hoodies & Sweatshirts";
+    sel2option7.innerText="Jackets & Coats";
+    sel2option8.innerText="Jeans";
+    sel2option9.innerText="Joggers";
+    sel2option10.innerText="Sportswear";
+    sel2option11.innerText="Underwear";
+
+    // third select 
+    let sel3option1=document.createElement("option");
+    let sel3option2=document.createElement("option");
+    let sel3option3=document.createElement("option");
+    let sel3option4=document.createElement("option");
+    let sel3option5=document.createElement("option");
+    let sel3option6=document.createElement("option");
+    let sel3option7=document.createElement("option");
+    let sel3option8=document.createElement("option");
+    let sel3option9=document.createElement("option");
+    let sel3option10=document.createElement("option");
+    let sel3option11=document.createElement("option");
+    let sel3option12=document.createElement("option");
+    let sel3option13=document.createElement("option");
+    let sel3option14=document.createElement("option");
+
+    sel3option1.value="Brand";
+    sel3option2.value="ASOS DESIGN";
+    sel3option3.value="Adidas";
+    sel3option4.value="Converse";
+    sel3option5.value="Dr Denim";
+    sel3option6.value="Hollister";
+    sel3option7.value="Nike";
+    sel3option8.value="Calvin Klein";
+    sel3option9.value="Puma";
+    sel3option10.value="Reebok";
+    sel3option11.value="Timberland";
+    sel3option12.value="Jack & Jones";
+    sel3option13.value="Levi's";
+    sel3option14.value="River Island";
+
+    sel3option1.innerText="Brand";
+    sel3option2.innerText="ASOS DESIGN";
+    sel3option3.innerText="Adidas";
+    sel3option4.innerText="Converse";
+    sel3option5.innerText="Dr Denim";
+    sel3option6.innerText="Hollister";
+    sel3option7.innerText="Nike";
+    sel3option8.innerText="Calvin Klein";
+    sel3option9.innerText="Puma";
+    sel3option10.innerText="Reebok";
+    sel3option11.innerText="Timberland";
+    sel3option12.innerText="Jack & Jones";
+    sel3option13.innerText="Levi's";
+    sel3option14.innerText="River Island";
+
+    // fourth select 
+    let sel4option1=document.createElement("option");
+    let sel4option2=document.createElement("option");
+    let sel4option3=document.createElement("option");
+    let sel4option4=document.createElement("option");
+    let sel4option5=document.createElement("option");
+
+    sel4option1.value="Body Fit";
+    sel4option2.value="Plus size";
+    sel4option3.value="Main Collection";
+    sel4option4.value="Tall";
+    sel4option5.value="shorts";
+
+    sel4option1.innerText="Body Fit";
+    sel4option2.innerText="Plus size";
+    sel4option3.innerText="Main Collection";
+    sel4option4.innerText="Tall";
+    sel4option5.innerText="shorts";
+
+    // fifth select
+    let sel5option1=document.createElement("option");
+    let sel5option2=document.createElement("option");
+    let sel5option3=document.createElement("option");
+
+    sel5option1.value="Leather/Non Leather";
+    sel5option2.value="Leather";
+    sel5option3.value="Non Leather";
+
+    sel5option1.innerText="Leather/Non Leather";
+    sel5option2.innerText="Leather";
+    sel5option3.innerText="Non Leather";
+    
+    // sixth select
+    let sel6option1=document.createElement("option");
+    let sel6option2=document.createElement("option");
+    let sel6option3=document.createElement("option");
+    let sel6option4=document.createElement("option");
+    let sel6option5=document.createElement("option");
+    let sel6option6=document.createElement("option");
+    let sel6option7=document.createElement("option");
+    let sel6option8=document.createElement("option");
+    let sel6option9=document.createElement("option");
+    let sel6option10=document.createElement("option");
+    let sel6option11=document.createElement("option");
+    let sel6option12=document.createElement("option");
+    let sel6option13=document.createElement("option");
+    let sel6option14=document.createElement("option");
+    let sel6option15=document.createElement("option");
+
+    sel6option1.value="Color";
+    sel6option2.value="Black";
+    sel6option3.value="Blue";
+    sel6option4.value="Brown";
+    sel6option5.value="Yellow";
+    sel6option6.value="Gold";
+    sel6option7.value="Green";
+    sel6option8.value="Grey";
+    sel6option9.value="Multi";
+    sel6option10.value="Navy";
+    sel6option11.value="Neutral";
+    sel6option12.value="Orange";
+    sel6option13.value="Pink";
+    sel6option14.value="Red";
+    sel6option15.value="White";
+
+    sel6option1.innerText="Color";
+    sel6option2.innerText="Black";
+    sel6option3.innerText="Blue";
+    sel6option4.innerText="Brown";
+    sel6option5.innerText="Yellow";
+    sel6option6.innerText="Gold";
+    sel6option7.innerText="Green";
+    sel6option8.innerText="Grey";
+    sel6option9.innerText="Multi";
+    sel6option10.innerText="Navy";
+    sel6option11.innerText="Neutral";
+    sel6option12.innerText="Orange";
+    sel6option13.innerText="Pink";
+    sel6option14.innerText="Red";
+    sel6option15.innerText="White";
+
+    // seventh select
+    let sel7option1=document.createElement("option");
+    let sel7option2=document.createElement("option");
+    let sel7option3=document.createElement("option");
+    let sel7option4=document.createElement("option");
+    let sel7option5=document.createElement("option");
+    let sel7option6=document.createElement("option");
+    let sel7option7=document.createElement("option");
+    let sel7option8=document.createElement("option");
+    let sel7option9=document.createElement("option");
+    let sel7option10=document.createElement("option");
+    let sel7option11=document.createElement("option");
+    let sel7option12=document.createElement("option");
+    let sel7option13=document.createElement("option");
+    let sel7option14=document.createElement("option");
+    let sel7option15=document.createElement("option");
+    let sel7option16=document.createElement("option");
+    let sel7option17=document.createElement("option");
+    let sel7option18=document.createElement("option");
+    let sel7option19=document.createElement("option");
+    let sel7option20=document.createElement("option");
+    let sel7option21=document.createElement("option");
+    let sel7option22=document.createElement("option");
+    let sel7option23=document.createElement("option");
+    let sel7option24=document.createElement("option");
+    let sel7option25=document.createElement("option");
+    let sel7option26=document.createElement("option");
+    let sel7option27=document.createElement("option");
+    let sel7option28=document.createElement("option");
+    let sel7option29=document.createElement("option");
+    let sel7option30=document.createElement("option");
+    let sel7option31=document.createElement("option");
+    let sel7option32=document.createElement("option");
+    let sel7option33=document.createElement("option");
+    let sel7option34=document.createElement("option");
+    let sel7option35=document.createElement("option");
+
+    sel7option1.value="Style";
+    sel7option2.value="Hoodies";
+    sel7option3.value="Joggers";
+    sel7option4.value="Shorts";
+    sel7option5.value="Sweatshirts";
+    sel7option6.value="T-shirts";
+    sel7option7.value="Vests";
+    sel7option8.value="Denim";
+    sel7option9.value="Granded collar";
+    sel7option10.value="Musical";
+    sel7option11.value="Regular";
+    sel7option12.value="Relaxed";
+    sel7option13.value="Casual";
+    sel7option14.value="Boxers";
+    sel7option15.value="Coats";
+    sel7option16.value="Blazers";
+    sel7option17.value="Jackets";
+    sel7option18.value="Briefs";
+    sel7option19.value="Trunks";
+    sel7option20.value="Loose";
+    sel7option21.value="Cropped";
+    sel7option22.value="Skinny";
+    sel7option23.value="Slim";
+    sel7option24.value="Straight leg";
+    sel7option25.value="Other";
+    sel7option26.value="Ankle";
+    sel7option27.value="Crew";
+    sel7option28.value="Invisible socks";
+    sel7option29.value="Sports socks";
+    sel7option30.value="Trainer socks";
+    sel7option31.value="Football Shirts";
+    sel7option32.value="Cap";
+    sel7option33.value="Hats";
+    sel7option34.value="Gloves";
+    sel7option35.value="Western";
+
+    sel7option1.innerText="Style";
+    sel7option2.innerText="Hoodies";
+    sel7option3.innerText="Joggers";
+    sel7option4.innerText="Shorts";
+    sel7option5.innerText="Sweatshirts";
+    sel7option6.innerText="T-shirts";
+    sel7option7.innerText="Vests";
+    sel7option8.innerText="Denim";
+    sel7option9.innerText="Granded collar";
+    sel7option10.innerText="Musical";
+    sel7option11.innerText="Regular";
+    sel7option12.innerText="Relaxed";
+    sel7option13.innerText="Casual";
+    sel7option14.innerText="Boxers";
+    sel7option15.innerText="Coats";
+    sel7option16.innerText="Blazers";
+    sel7option17.innerText="Jackets";
+    sel7option18.innerText="Briefs";
+    sel7option19.innerText="Trunks";
+    sel7option20.innerText="Loose";
+    sel7option21.innerText="Cropped";
+    sel7option22.innerText="Skinny";
+    sel7option23.innerText="Slim";
+    sel7option24.innerText="Straight leg";
+    sel7option25.innerText="Other";
+    sel7option26.innerText="Ankle";
+    sel7option27.innerText="Crew";
+    sel7option28.innerText="Invisible socks";
+    sel7option29.innerText="Sports socks";
+    sel7option30.innerText="Trainer socks";
+    sel7option31.innerText="Football Shirts";
+    sel7option32.innerText="Cap";
+    sel7option33.innerText="Hats";
+    sel7option34.innerText="Gloves";
+    sel7option35.innerText="Western";
+    
+    // eigth select
+    let sel8option1=document.createElement("option");
+    let sel8option2=document.createElement("option");
+    let sel8option3=document.createElement("option");
+    let sel8option4=document.createElement("option");
+    let sel8option5=document.createElement("option");
+    let sel8option6=document.createElement("option");
+    let sel8option7=document.createElement("option");
+    let sel8option8=document.createElement("option");
+    let sel8option9=document.createElement("option");
+    let sel8option10=document.createElement("option");
+    let sel8option11=document.createElement("option");
+    let sel8option12=document.createElement("option");
+    let sel8option13=document.createElement("option");
+    let sel8option14=document.createElement("option");
+    let sel8option15=document.createElement("option");
+    let sel8option16=document.createElement("option");
+    let sel8option17=document.createElement("option");
+    let sel8option18=document.createElement("option");
+
+    sel8option1.value="Size";
+    sel8option2.value="UK 2.5";
+    sel8option3.value="UK 3";
+    sel8option4.value="UK 3.5";
+    sel8option5.value="UK 4";
+    sel8option6.value="UK 4.5";
+    sel8option7.value="UK 5";
+    sel8option8.value="UK 5.5";
+    sel8option9.value="UK 6";
+    sel8option10.value="UK 6 Wide Fit";
+    sel8option11.value="UK 6.5";
+    sel8option12.value="UK 7";
+    sel8option13.value="UK 7 Wide Fit";
+    sel8option14.value="UK 7.5";
+    sel8option15.value="UK 7.5-8";
+    sel8option16.value="UK 8";
+    sel8option17.value="UK 8 Wide Fit";
+    sel8option18.value="UK 8.5";
+
+    sel8option1.innerText="Size";
+    sel8option2.innerText="UK 2.5";
+    sel8option3.innerText="UK 3";
+    sel8option4.innerText="UK 3.5";
+    sel8option5.innerText="UK 4";
+    sel8option6.innerText="UK 4.5";
+    sel8option7.innerText="UK 5";
+    sel8option8.innerText="UK 5.5";
+    sel8option9.innerText="UK 6";
+    sel8option10.innerText="UK 6 Wide Fit";
+    sel8option11.innerText="UK 6.5";
+    sel8option12.innerText="UK 7";
+    sel8option13.innerText="UK 7 Wide Fit";
+    sel8option14.innerText="UK 7.5";
+    sel8option15.innerText="UK 7.5-8";
+    sel8option16.innerText="UK 8";
+    sel8option17.innerText="UK 8 Wide Fit";
+    sel8option18.innerText="UK 8.5";
+    
+
+    sel1.append(sel1option1,sel1option2,sel1option3);
+    sel2.append(sel2option1,sel2option2,sel2option3,sel2option4,sel2option5,sel2option6,sel2option7,sel2option8,sel2option9);
+    sel3.append(sel3option1,sel3option2,sel3option3,sel3option4,sel3option5,sel3option6,sel3option7,sel3option8,sel3option9,sel3option10,sel3option11,sel3option12,sel3option13,sel3option14)
+    sel4.append(sel4option1,sel4option2,sel4option3,sel4option4,sel4option5);
+    sel5.append(sel5option1,sel5option2,sel5option3);
+    sel6.append(sel6option1,sel6option2,sel6option3,sel6option4,sel6option5,sel6option6,sel6option7,sel6option8,sel6option9,sel6option10,sel6option11,sel6option12,sel6option13,sel6option14)
+    sel7.append(sel7option1,sel7option2,sel7option3,sel7option4,sel7option5,sel7option6,sel7option7,sel7option8,sel7option9,sel7option10,sel7option11,sel7option12,sel7option13,sel7option14,sel7option15,sel7option16,sel7option17,sel7option18,sel7option19,sel7option20,sel7option21,sel7option22,sel7option23,sel7option24,sel7option25,sel7option26,sel7option27,sel7option28,sel7option29,sel7option30,sel7option31,sel7option32,sel7option33,sel7option34)
+    sel8.append(sel8option1,sel8option2,sel8option3,sel8option4,sel8option5,sel8option6,sel8option7,sel8option8,sel8option9,sel8option10,sel8option11,sel8option12,sel8option13,sel8option14,sel8option15,sel8option16,sel8option17,sel8option18)
+    sortBar.append(sel1,sel2,sel3,sel4,sel6,sel7,sel8);
+
+
+
+    sel1.addEventListener("change",function(){
+        sortingFunction(liveData)
+    });
+    sel2.addEventListener("change",function(){
+        sortingFunction(liveData)});
+    sel3.addEventListener("change",function(){
+        sortingFunction1(liveData)});
+    sel4.addEventListener("change",function(){
+        sortingFunction1(liveData)});
+    sel6.addEventListener("change",function(){
+        sortingFunction1(liveData)});
+    sel7.addEventListener("change",function(){
+        sortingFunction1(liveData)});
+    sel8.addEventListener("change",function(){
+        sortingFunction1(liveData)});
+}

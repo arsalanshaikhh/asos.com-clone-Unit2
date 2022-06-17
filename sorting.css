@@ -1,0 +1,329 @@
+
+#hoverDropdown4{
+    width: 100%;
+    margin: auto;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    display: flex;
+}
+
+
+.normalList{
+    width: 25%;
+    border: 1px solid #bebaba;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+.normalList>ul{
+    font-size: 20px;
+    margin-left: 20px;
+    list-style: none;
+    line-height: 40px;
+    color: #5e5c5c;   
+}
+.normalList>ul>li{
+    cursor: pointer;
+}
+.normalList>ul>li:hover{
+    color: blue;
+}
+.normalList>ul>h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+.rectTwoImageList1{
+    width: 50%;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rectTwoImageList1>div{
+    position: relative;
+    border: 1px solid #bebaba;
+    cursor: pointer;
+    padding:0px;
+    display: flex;
+}
+.rectTwoImageList1>div:hover{
+    border-color: blue;    
+}
+.rectTwoImageList1>div>img{
+    width: 100%;
+}
+.rectTwoImageList1>div>p{
+    width:60%;
+    position: absolute;
+    top:75%;
+    left:15%;
+    font-size: 30px;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-weight: bold;   
+}
+
+
+
+.twoLists{
+    width:50%;
+    border-right:1px solid #929090; 
+}
+.twoLists>ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 20px;
+    margin-left: 20px;
+    list-style: none;
+    line-height: 40px;
+    color: #5e5c5c;
+}
+.twoLists>ul>li{
+    cursor: pointer;
+}
+.twoLists>ul>li:hover{
+    color:blue;
+}
+.twoLists>ul>h3{
+    grid-area: 1/1/3/3;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+
+.circleTwoImageList{
+    width:25%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    position:relative;
+}
+.circleTwoImageList>h3{
+    grid-area: 1/1/3/3;
+    margin-top:5px;
+    text-decoration: underline;
+    color: black;
+    font-size: 22px;
+}
+.circleTwoImageList>div:nth-child(2){
+    position:absolute;  
+    top:40px; 
+    right:50%;
+}
+.circleTwoImageList>div:nth-child(3){
+    position:absolute;  
+    top:40px;
+    left:50%; 
+}
+.circleTwoImageList>div>img{
+    width:70%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border-color: #929090;
+    position: relative; 
+    margin-bottom: 10px; 
+}
+.circleTwoImageList>div>img:hover{
+    border:1px solid blue;
+    cursor: pointer;
+}
+.circleTwoImageList>div>p{
+    text-align: center;
+}
+.circleTwoImageList>div>p:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+
+.circleFourImageList{
+    width:25%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    position:relative;
+}
+.circleFourImageList>h3{
+    grid-area: 1/1/3/3;
+    margin-top:5px;
+    text-decoration: underline;
+    color: black;
+    font-size: 22px;
+}
+.circleFourImageList>div:nth-child(2){
+    position:relative;
+}
+.circleFourImageList>div:nth-child(3){
+    position:relative;
+}
+.circleFourImageList>div:nth-child(4){
+    position:relative; 
+} 
+.circleFourImageList>div:nth-child(5){
+    position:relative;
+}
+.circleFourImageList>div>img{
+    width:70%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border-color: #929090;
+    position: relative; 
+    margin-bottom: 10px;
+    border:1px solid #929090;
+}
+.circleFourImageList>div>img:hover{
+    border:1px solid blue;
+    cursor: pointer;
+}
+.circleFourImageList>div>p{
+    text-align: center;
+}
+.circleFourImageList>div>p:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+
+.rectTwoImageList{
+    width: 25%;
+    border: 1px solid #dad3d3;
+    border-top:0px;
+    border-bottom: 0px;
+    padding-bottom:30px;
+}
+.rectTwoImageList>div:nth-child(1){
+    position: relative;
+    width: 80%;
+    height: 50%;
+    cursor: pointer;
+    margin: auto;
+    margin-top:30px;
+}
+.rectTwoImageList>div:nth-child(2){
+    position: relative;
+    width: 80%;
+    height: 50%;
+    cursor: pointer;
+    margin: auto;
+}
+.rectTwoImageList>div>img{
+    width: 100%;
+    height:95%;
+    position: absolute;
+    border: 1px solid #dad3d3;
+}
+.rectTwoImageList>div>img:hover{
+    border:1px solid blue;    
+}
+.rectTwoImageList>div>p{
+    width:60%;
+    position: absolute;
+    top:60%;
+    left:15%;
+    font-size: 30px;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-weight: bold;   
+}
+/* .rectTwoImageList>div>p:hover{
+    color: blue;    
+} */
+
+
+.oneImageList1{
+    width: 25%;
+    padding:10px 20px;
+    position: relative;
+    /* border-right: 1px solid #dad3d3; */
+}
+.oneImageList1>h3{
+    text-decoration: underline;
+    color: black;
+    font-size: 22px;    
+}
+.oneImageList1>img{
+    margin-top:20px;
+    border: 1px solid #dad3d3;
+    box-shadow: 5px 10px 20px 2px Green inset;
+}
+.oneImageList1>img:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+}
+.oneImageList1>p{
+    width:40%;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom:10%;
+    left:30%;
+}
+
+
+
+.oneImageList{
+    width: 25%;
+    padding:10px 20px;
+    position: relative;
+    /* border-right: 1px solid #dad3d3; */
+}
+.oneImageList>img{
+    margin-top:45px;
+    border: 1px solid #dad3d3;
+}
+.oneImageList>img:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+}
+.oneImageList>p{
+    width:40%;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom:10%;
+    left:30%;
+}
+#sortException1{
+    width:50%;
+    right:25%;
+    left:25%;
+}
+.threeImageList{
+    width: 75%;
+}
+
+
+
+
+
+
+
+
+.oneImageList{
+    width: 25%;
+}
+
+
+
+
+
+
+
+.rectThreeImageList{
+    width:25%;
+}
+
+
+
+#uniqueFourImageList{
+    width:100%;
+}
