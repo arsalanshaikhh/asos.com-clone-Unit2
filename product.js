@@ -1,24 +1,9 @@
-// let SelectedItemJumpToProduct = [
-//     {
-//         "Product": "Boots",
-//         "Brand": "ASOS DESIGN",
-//         "ImageUrl": "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-//         "Price": "£ 32",
-//         "Style": "Chelsea",
-//         "Color": "Black",
-//         "Size": "UK 7",
-//         "BodyFit": "Body fit",
-//         "Leather": "Leather"
-//     }
-
-// ]
-
-let theArr = JSON.parse(localStorage.getItem("SelectedItemJumpToProduct")) || [
+let theArr = JSON.parse(localStorage.getItem("selectedItemJumpToProduct")) || [
     {
         Product: "Boots",
         Brand: "ASOS DESIGN",
         ImageUrl: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-        Price: "£ 32",
+        Price: "32",
         Style: "Chelsea",
         Color: "Black",
         Size: "UK 7",
@@ -28,24 +13,9 @@ let theArr = JSON.parse(localStorage.getItem("SelectedItemJumpToProduct")) || [
 
 ];
 
-// let theArr = [
-//     {
-//         Product: "Boots",
-//         Brand: "ASOS DESIGN",
-//         ImageUrl: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-//         Price: "£ 32",
-//         Style: "Chelsea",
-//         Color: "Black",
-//         Size: "UK 7",
-//         BodyFit: "Body fit",
-//         Leather: "Leather"
-//     }
-
-// ]
-
 document.querySelector("#second>h2").innerText = theArr[0].Brand + " " + theArr[0].Product + ", " + "Style -" + " " + theArr[0].Style + " " + theArr[0].Leather + " (" + theArr[0].BodyFit + ") ";
 
-document.querySelector("#eur").innerText = theArr[0].Price
+document.querySelector("#eur").innerText = "£ " + theArr[0].Price
 
 document.querySelector("#col").innerText = "Color:" + " " + theArr[0].Color
 
