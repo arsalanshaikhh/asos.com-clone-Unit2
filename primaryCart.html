@@ -12,14 +12,14 @@
         margin: 0;
       }
 
-      #top{
-        display:flex;
+      #top {
+        display: flex;
         width: 57.5%;
         justify-content: space-between;
         align-items: center;
       }
-      #top>img{
-        width:23%;
+      #top > img {
+        width: 23%;
       }
       h1 {
         text-align: center;
@@ -38,7 +38,8 @@
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: flex-start;
+        /* justify-content: space-between; */
       }
       #p2 {
         /* margin: auto; */
@@ -46,49 +47,54 @@
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-    }
-    
-    #c1{
-        border: 1px solid black;
-        
-    }
-    #c2{
-        border: 1px solid black;
-        
-    }
-    #c3{
-        
-        border: 1px solid black;
-    }
-    
-    #m1{
-        border: 1px solid black;
-        
-    }
-    #m2{
-        border: 1px solid black;
-        
-    }
-    #m3{
-        
-        border: 1px solid black;
-    }
+        align-items: flex-start;
+      }
 
-        
-        
+      #c1 {
+        width: 100%;
+        border: 1px solid black;
+      }
+      #c2 {
+        border: 1px solid black;
+        width: 100%;
+      }
+      #c3 {
+        border: 1px solid black;
+        width: 100%;
+      }
+
+      #c4 {
+        border: 1px solid black;
+        width: 100%;
+      }
+
+      #m1 {
+        border: 1px solid black;
+        width: 100%;
+      }
+      #m2 {
+        border: 1px solid black;
+        width: 100%;
+      }
+      #m3 {
+        border: 1px solid black;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
     <div id="main">
       <div id="top">
-          <img src="https://cdn.freebiesupply.com/logos/large/2x/asos-com-logo-png-transparent.png" alt="asos logo" />
-          <h1>CHECKOUT</h1>
-        </div>
-        </div>
+        <img
+          src="https://cdn.freebiesupply.com/logos/large/2x/asos-com-logo-png-transparent.png"
+          alt="asos logo"
+        />
+        <h1>CHECKOUT</h1>
+      </div>
+    </div>
 
     <div id="main">
       <div id="p1">
-       
         <div id="c1">
           <h4>DELIVERY COUNTRY:</h4>
           <img
@@ -107,49 +113,49 @@
           <br />
 
           <div>
-          <b>NEED TO KNOW</b>
-          <ul>
-            <li>
-              You can only use one discount/promo code per order. This applies
-              to our free-delivery codes, too.
-            </li>
-            <li>
-              Discount/promo codes cannot be used when buying gift vouchers.
-            </li>
-          </ul>
+            <b>NEED TO KNOW</b>
+            <ul>
+              <li>
+                You can only use one discount/promo code per order. This applies
+                to our free-delivery codes, too.
+              </li>
+              <li>
+                Discount/promo codes cannot be used when buying gift vouchers.
+              </li>
+            </ul>
+          </div>
         </div>
-
-        </div>
-        <div id="c2">
+        <div id="c3">
           <p>EMAIL ADDRESS</p>
           <p>/// email id here \\\</p>
         </div>
 
-        <div>/// delivery address here \\\</div>
+        <div id="c4">/// delivery address here \\\</div>
       </div>
 
       <div id="p2">
         <div id="m1">
           <p>/// append number of items here \\\</p>
-        </div id="m2">
+        </div>
         <hr />
 
-        <div>/// append cart items here \\\</div>
-       <hr>
+        <div id="m2">/// append cart items here \\\</div>
+        <hr />
         <div id="m3">
+          <div id="z1">
+            <div>Subtotal</div>
+            <div></div>
+          </div>
 
-            <div>
+          <div id="z2">
+            <div>Delivery</div>
+            <div>£5.00</div>
+          </div>
 
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
+          <div id="z3">
+            <div>TOTAL TO PAY</div>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -157,16 +163,175 @@
 </html>
 
 <script>
+  let pArr = JSON.parse(localStorage.getItem("pData")) || [
+    {
+      img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+      price: 32,
+      name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
+      color: "Black",
+      size: "UK 8.5",
+    },
+    {
+      img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+      price: 64,
+      name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
+      color: "Black",
+      size: "UK 8.5",
+    },
+  ];
 
-let theArr = JSON.parse(localStorage.getItem("pData")) || [
-{
-            img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-            price: 32,
-            name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
-            color: "Black",
-            size: "UK 8.5",
-        }
+  let obj = {};
+  let count1 = 0;
 
-]
+  pArr.forEach(function (elem, index) {
+    let dvi = document.createElement("div");
+    document.querySelector("#m2").append(dvi);
+    dvi.setAttribute("id", "item");
 
+    let tImg = document.createElement("img");
+    tImg.setAttribute("src", elem.img);
+
+    let fDvi = document.createElement("div");
+
+    let tPri = document.createElement("h6");
+    tPri.innerText = elem.price;
+
+    let tPar = document.createElement("p");
+    tPar.innerText = elem.name;
+
+    let tCol = document.createElement("h6");
+    tCol.innerText = elem.color;
+
+    let tSiz = document.createElement("h6");
+    tSiz.innerText = elem.size;
+
+    let rev = document.createElement("button");
+    rev.innerText = "Remove";
+    rev.addEventListener("click", function () {
+      del(index);
+    });
+
+    function del(index) {
+      console.log(index);
+      pArr.splice(index, 1);
+
+      localStorage.setItem("pData", JSON.stringify(pArr));
+      window.location.reload();
+    }
+
+    var sel = document.createElement("Select");
+    sel.setAttribute("id", "MySelect");
+    document.body.appendChild(sel);
+
+    var opt = document.createElement("option");
+    opt.setAttribute("value", "");
+    var nod = document.createTextNode("Quantity");
+    opt.appendChild(nod);
+
+    sel.appendChild(opt);
+
+    var opt10 = document.createElement("option");
+    opt10.setAttribute("value", 1);
+    var nod10 = document.createTextNode(1);
+    opt10.appendChild(nod10);
+
+    sel.appendChild(opt10);
+
+    var opt9 = document.createElement("option");
+    opt9.setAttribute("value", 2);
+    var nod9 = document.createTextNode(2);
+    opt9.appendChild(nod9);
+
+    sel.appendChild(opt9);
+
+    var opt8 = document.createElement("option");
+    opt8.setAttribute("value", 3);
+    var nod8 = document.createTextNode(3);
+    opt8.appendChild(nod8);
+
+    sel.appendChild(opt8);
+
+    var opt7 = document.createElement("option");
+    opt7.setAttribute("value", 4);
+    var nod7 = document.createTextNode(4);
+    opt7.appendChild(nod7);
+
+    sel.appendChild(opt7);
+
+    var opt6 = document.createElement("option");
+    opt6.setAttribute("value", 5);
+    var nod6 = document.createTextNode(5);
+    opt6.appendChild(nod6);
+
+    sel.appendChild(opt6);
+
+    var opt5 = document.createElement("option");
+    opt5.setAttribute("value", 6);
+    var nod5 = document.createTextNode(6);
+    opt5.appendChild(nod5);
+
+    sel.appendChild(opt5);
+
+    var opt4 = document.createElement("option");
+    opt4.setAttribute("value", 7);
+    var nod4 = document.createTextNode(7);
+    opt4.appendChild(nod4);
+
+    sel.appendChild(opt4);
+
+    var opt3 = document.createElement("option");
+    opt3.setAttribute("value", 8);
+    var nod3 = document.createTextNode(8);
+    opt3.appendChild(nod3);
+
+    sel.appendChild(opt3);
+
+    var opt2 = document.createElement("option");
+    opt2.setAttribute("value", 9);
+    var nod2 = document.createTextNode(9);
+    opt2.appendChild(nod2);
+
+    sel.appendChild(opt2);
+
+    var opt1 = document.createElement("option");
+    opt1.setAttribute("value", 10);
+    var nod1 = document.createTextNode(10);
+    opt1.appendChild(nod1);
+
+    sel.appendChild(opt1);
+
+    sel.addEventListener("change", function () {
+      func(index);
+    });
+
+    function func(index) {
+      count1 = 0;
+      count1 = count1 + elem.price * sel.value;
+
+      if (obj[index] == undefined) {
+        obj[index] = count1;
+      } else {
+        obj[index] = count1;
+      }
+      let sum = 0;
+      for (let i in obj) {
+        sum = sum + obj[i];
+      }
+      console.log(sum);
+
+      document.querySelector("#z1>div:nth-child(2)").innerText =
+        "£ " + sum.toFixed(2);
+
+      document.querySelector("#z3>div:nth-child(2)").innerText =
+        "£ " + (sum + 5).toFixed(2);
+    }
+    if (pArr.length == 1) {
+      document.querySelector("#m1>p").innerText = pArr.length + " Item";
+    } else if (pArr.length !== 0) {
+      document.querySelector("#m1>p").innerText = pArr.length + " Items";
+    }
+
+    fDvi.append(tPri, tPar, tCol, tSiz, sel, rev);
+    dvi.append(tImg, fDvi);
+  });
 </script>
