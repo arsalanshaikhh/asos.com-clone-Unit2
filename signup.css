@@ -1,0 +1,394 @@
+      *{
+        font-family: 'Lato',sans-serif;
+      }
+      #logo{
+       /* border: 1px solid red; */
+       width: 12%;
+       margin: auto;
+       margin-top: 20px;
+       margin-bottom: 20px;
+      }
+      #logo>img{
+        width: 100%;
+        height: 100%;
+
+      }
+      #head{
+        width: 90%;
+        /* border: solid 1px red; */
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+       padding: 15px;
+       }
+       #head>div{
+        height: 40px;
+        /* border: solid 1px green; */
+        text-align: center;
+        padding-top: 12px;
+        font-size: 20px;
+        
+       }
+       #head>div a{
+        text-decoration: none;
+        color: black;
+       }
+        #head>div:hover{
+    color: rgb(108, 104, 104);
+    
+   }
+       #head>div:nth-child(1){
+        color: rgb(108, 104, 104);
+        border-bottom: solid 1px;
+        border-bottom-color: blue;
+        
+       }
+       #head>div a:hover{
+        color: rgb(108, 104, 104);
+        border: none;
+       }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+        #outerbox{
+            width: 40%;
+            height: 1500px;
+            margin: auto;
+            margin-bottom: 50px;
+            /* border: solid 1px red; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #firstbox{
+            width: 90%;
+            height: 30%;
+            margin: auto;
+            /* border: solid 1px green; */
+            display: grid;
+           grid-template-columns: repeat(3,28%);
+           justify-content: center;
+           gap: 4%;
+        }
+        #firstbox>div{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border: solid 0.5px grey;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            margin: 2%;
+            padding: 2%;
+        }
+        #firstbox>div:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: solid 1px black;
+        }
+        #firstbox>div>div{
+            width: 90%;
+            /* border: solid 1px teal; */
+            height: 60%;
+        }
+        #firstbox>div>div:nth-child(1){
+            width: 35%;
+            margin: auto;
+        }
+        #firstbox>div>div:nth-child(2){
+            margin: auto;
+            width: 100%;
+            margin-top: 2%;
+        }
+        #firstbox>div>div>img{
+          width: 80%; 
+          height: 90%; 
+        }
+        #firstbox>div>div>a{
+            font-size: 0.8vw;
+            margin: 7%;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+       
+        #firstbox + p{
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 22px;
+            color: grey;
+           margin-bottom: 50px;
+        }
+        #innerbox{
+            width: 80%;
+            /* height: 1100px; */
+            /* border: solid 1px green; */
+            margin: auto;
+        }
+        #innerbox p{
+            color: grey;
+            margin-left: 20px;
+        }
+        h4{
+           margin-left: 20px;
+           color: grey;
+           font-style: normal;
+           font-size: 16px;
+        }
+        input{
+            display: block;
+            width: 90%;
+            height: 35px;
+            margin: auto;
+        }
+        select{
+            /* display: flex; */
+            height: 35px;
+            width: 30%;
+            margin: auto;
+            margin-left: 10px;
+
+        }
+        #radio{
+            /* border: solid 1px red; */
+            width: 90%;
+            height: 50px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            margin-bottom: 20px;
+        }
+        #radio>div{
+            /* border: solid 1px green; */
+            display: grid;
+            grid-template-columns: repeat(2,45%);
+            /* justify-content: space; */
+            align-items: center;
+            padding: 2%;
+        }
+        #radio>div>div{
+            /* border: solid 1px blue; */
+            color: grey;
+        }
+        #radio>div>div:nth-child(2){
+            font-size: 1vw;
+        }
+        #radio>div>div:nth-child(1){
+            width: 25%;
+            height: 50%;
+            padding-bottom: 10%;
+            margin-left: 10%;
+        }
+        .contact{
+            width: 90%;
+            /* border: solid 1px red; */
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(2,50%);
+        }
+        .contact>div{
+            /* border: solid 1px green; */
+            display: grid;
+            width: 100%;
+            
+        }
+        .contact>div:nth-child(2){
+            padding-left: 5%;
+        }
+        .contact>div>div{
+            /* border: solid 1px blue; */
+            width: 100%;
+        }
+        .contact>div>div:nth-child(2){
+            font-size: 80%;
+        }
+        .contact>div>div:nth-child(1){
+            font-size: 100%;
+        }
+        .contact>div>input{
+            background-color: grey;
+            width: 60%;
+            font-size: 100%;
+            border: none;
+            font-weight: bold;
+            margin: 5%;
+        }
+        #bottom{
+            /* border: solid 1px red; */
+            width: 90%;
+            margin: auto;
+            /* grid-template-columns: repeat(2,50%); */
+        }
+        #bottom>div{
+            /* border: solid 1px green; */
+            display: grid;
+            margin-top: 5%;
+            margin-bottom: 6%;
+            grid-template-columns: repeat(2,50%);
+        }
+        #bottom>div>div{
+            /* border: solid 1px blue; */
+            /* text-align: center; */
+            font-size: 100%;
+            padding: 3%;
+            font-weight: bold;
+        }
+        #bottom>div>div>input{
+            width:80%;
+            height: 100%;
+            margin-left: 50%;
+        }
+        #submit{
+            margin-top: 7%;
+            background-color: black;
+            color: aliceblue;
+            font-size: 100%;
+            margin-bottom: 5%;
+        }
+        a{
+            text-align: center;
+            /* text-decoration: underline; */
+            display: block;
+            margin: auto;
+            color: grey;
+        }
+
+        @media all and (min-width:540px) and (max-width: 795px){
+            #outerbox{
+                width: 90%;
+                
+            }
+            #radio>div>div:nth-child(2){
+                font-size: 100%;
+            }
+            #radio>div>div:nth-child(1){
+                width: 40%;
+                height: 50%;
+                padding-bottom: 25%;
+            }
+            #radio>div{
+                grid-template-columns: repeat(2,30%);
+            }
+            select{
+                width: 30%;
+                margin: auto;
+                margin-left: 0px;
+    
+            }
+            #firstbox>div>div>a{
+                font-size: 1.8vw;
+
+            }
+            #firstbox>div>div:nth-child(1){
+                margin: auto;
+            }
+            #firstbox>div>div>img{
+                width: 80%; 
+                height: 80%; 
+              }
+            #firstbox>div>div{
+                width: 90%;
+            }
+            #firstbox>div{
+                width: 100%;
+                margin: 2%;
+                padding: 2%;
+                height: 100%;
+            }
+            #innerbox p{
+                font-size: 80%;
+            }
+            h1{
+                font-size: 100%;
+            }
+            .contact>div>div:nth-child(2){
+                font-size: 60%;
+            }
+            .contact>div>div:nth-child(1){
+                font-size: 65%;
+            }
+            .contact>div>input{
+                width: 100%;
+            }
+            #bottom>div>div{
+                font-size: 80%;
+            }
+        }  
+        @media all and (min-width:320px) and (max-width: 539px){
+            #outerbox{
+                width: 100%;
+                    
+            } 
+            #outerbox p{
+                font-size: 80%;
+            } 
+           #innerbox h4{
+            font-size: 80%;
+            }  
+            #radio>div>div:nth-child(2){
+                font-size: 65%;
+               
+            }
+            #radio>div>div:nth-child(1){
+                width: 40%;
+                height: 50%;
+                padding-bottom: 25%;
+            }
+            #radio>div{
+                grid-template-columns: repeat(2,30%);
+            }
+            select{
+                width: 32%;
+                margin: auto;
+                margin-left: 0px;
+    
+            }
+            #firstbox>div>div>a{
+                font-size: 2vw;
+            }
+            #firstbox>div>div:nth-child(1){
+                margin: auto;
+            }
+            #firstbox>div>div>img{
+                width: 70%; 
+                height: 70%; 
+              }
+            #firstbox>div>div{
+                width: 90%;
+            }
+            #firstbox>div{
+                width: 100%;
+                margin: 2%;
+                padding: 2%;
+                height: 100%;
+            }
+            #innerbox p{
+                font-size: 70%;
+            }
+            h1{
+                font-size: 100%;
+            }
+            .contact>div>div:nth-child(2){
+                font-size: 49%;
+            }
+            .contact>div>div:nth-child(1){
+                font-size: 53%;
+            }
+            .contact>div>input{
+                width: 100%;
+            }
+            .contact>div>input{
+                width: 75%;
+                height: 90%;
+                font-size: 70%;
+                margin-left: 15%;
+                margin-top: 2%;
+            }
+            #bottom>div>div{
+                font-size: 65%;
+            }
+            a{
+                font-size: 70%;
+            }
+        }
+       
