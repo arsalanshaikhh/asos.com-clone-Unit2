@@ -657,7 +657,9 @@ document.querySelector("#headPart4").addEventListener("mouseleave",dropDownremov
 function dropDownremoverShoe2(event){
     document.querySelector("#headPart4").style.display="none";
 }
-// "Price": "£ 33",
+
+
+// DATA
 let  mensClothingData=[
     {
         "Product": "T-shirts & Vests",
@@ -1195,28 +1197,6 @@ let womensClothingData=[
         "Style": "Maxi"
     },
     {
-        "ImageUrl": "https://www.asos.com/women/dresses/cat/?cid=8799&nlid=ww|clothing|shop+by+product|dresses",
-        "ProductName": "ASOS DESIGN Curve embroidered button through maxi dress in black",
-        "Price": "20",
-        "Product": "Dresses",
-        "BodyFit": "Plus Size",
-        "Brand": "ASOS Curve",
-        "Color": "Black",
-        "Size": "M",
-        "Style": "Maxi"
-    },
-    {
-        "ImageUrl": "https://www.asos.com/women/dresses/cat/?cid=8799&nlid=ww|clothing|shop+by+product|dresses",
-        "ProductName": "ASOS DESIGN Curve embroidered button through maxi dress in black",
-        "Price": "40",
-        "Product": "Dresses",
-        "BodyFit": "Plus Size",
-        "Brand": "ASOS Curve",
-        "Color": "Black",
-        "Size": "L",
-        "Style": "Maxi"
-    },
-    {
         "ImageUrl": "https://images.asos-media.com/products/asos-design-curve-embroidered-button-through-maxi-dress-in-black/201675330-1-black?$n_480w$&wid=476&fit=constrain",
         "ProductName": "ASOS DESIGN Curve embroidered button through maxi dress in black",
         "Price": "10",
@@ -1379,17 +1359,6 @@ let womensClothingData=[
         "Brand": "ASOS Curve",
         "Color": "Blue",
         "Size": "UK 2",
-        "Style": "Mini"
-    },
-    {
-        "ImageUrl": "https://www.asos.com/asos-curve/asos-design-curve-high-neck-pleated-mini-dress-with-godet-detail/prd/200369279?ColorWayId=200369280&cid=8799",
-        "ProductName": "  ASOS DESIGN Curve high neck pleated mini dress with godet detail",
-        "Price": "50",
-        "Product": "Dresses",
-        "BodyFit": "Plus Size",
-        "Brand": "ASOS Curve",
-        "Color": "Blue",
-        "Size": "XL",
         "Style": "Mini"
     },
     {
@@ -1710,17 +1679,6 @@ let womensClothingData=[
         "Color": "Black",
         "Size": "L",
         "Style": "Midi"
-    },
-    {
-        "ImageUrl": "https://www.asos.com/asos-curve/asos-design-curve-popcorn-texture-beach-mini-dress-in-black/prd/201722264?ColorWayId=201722274&cid=8799",
-        "ProductName": " ASOS DESIGN Curve popcorn texture beach mini dress in black",
-        "Price": "26",
-        "Product": "Dresses",
-        "BodyFit": "Plus Size",
-        "Brand": "ASOS Curve",
-        "Color": "Black",
-        "Size": "UK 10",
-        "Style": "Mini"
     },
     {
         "ImageUrl": "https://images.asos-media.com/products/asos-design-curve-embellished-buttons-off-shoulder-tux-mini-dress-in-black/14938860-1-black?$n_480w$&wid=476&fit=constrain",
@@ -2072,8 +2030,6 @@ sortBar.style.backgroundColor="transparent"
 document.querySelector("body").append(sortBar);
 
   
-
-
 function displaySortBar1(){
     sortBar.innerHTML="";
     let sel1=document.createElement("select");
@@ -2455,178 +2411,6 @@ function displaySortBar1(){
         sortingFunction(liveData)});
     sel8.addEventListener("change",function(){
         sortingFunction(liveData)});
-}
-
-function sortingFunction(arr11){
-    console.log(arr11);
-    // id=selectSort1,selectSort2,selectSort3,selectSort4....
-    let arr1=[];
-    let arr2=[];
-    let a=document.querySelector("#selectSort1").value;
-    let b=document.querySelector("#selectSort2").value;
-    let c=document.querySelector("#selectSort3").value;
-    let d=document.querySelector("#selectSort4").value;
-    let e=document.querySelector("#selectSort5").value;
-    let f=document.querySelector("#selectSort6").value;
-    let g=document.querySelector("#selectSort7").value;
-    let h=document.querySelector("#selectSort8").value;
-    
-    // condition2
-    if(b!="Product type"){
-            arr11.forEach(function(ele){
-                if(ele.Product==b) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr11;
-    }
-    // condition3
-    arr2=arr1;
-    arr1=[];
-    if(c!="Brand" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Brand==c) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition4
-    arr2=arr1;
-    arr1=[];
-    if(d!="Body Fit" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.BodyFit==d) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // conditon5
-    arr2=arr1;
-    arr1=[];
-    if(e!="Leather/Non Leather" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Leather==e) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition6
-    arr2=arr1;
-    arr1=[];
-    if(f!="Color" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Color==f) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition7
-    arr2=arr1;
-    arr1=[];
-    if(g!="Style" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Style==g) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition8
-    arr2=arr1;
-    arr1=[];
-    if(h!="Size" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Size==h) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    displayShoeMen(arr1);
-}
-
-function sortingFunction1(arr11){
-    console.log(arr11);
-    // id=selectSort1,selectSort2,selectSort3,selectSort4....
-    let arr1=[];
-    let arr2=[];
-    let a=document.querySelector("#selectSort1").value;
-    let b=document.querySelector("#selectSort2").value;
-    let c=document.querySelector("#selectSort3").value;
-    let d=document.querySelector("#selectSort4").value;
-    let f=document.querySelector("#selectSort6").value;
-    let g=document.querySelector("#selectSort7").value;
-    let h=document.querySelector("#selectSort8").value;
-    
-    // condition2
-    if(b!="Product type"){
-            arr11.forEach(function(ele){
-                if(ele.Product==b) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr11;
-    }
-    // condition3
-    arr2=arr1;
-    arr1=[];
-    if(c!="Brand" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Brand==c) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition4
-    arr2=arr1;
-    arr1=[];
-    if(d!="Body Fit" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.BodyFit==d) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition6
-    arr2=arr1;
-    arr1=[];
-    if(f!="Color" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Color==f) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition7
-    arr2=arr1;
-    arr1=[];
-    if(g!="Style" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Style==g) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    // condition8
-    arr2=arr1;
-    arr1=[];
-    if(h!="Size" && arr2.length!=0){
-            arr2.forEach(function(ele){
-                if(ele.Size==h) arr1.push(ele);
-            })
-    }
-    else {
-        arr1=arr2;
-    }
-    displayShoeMen(arr1);
 }
 function displaySortBar2(){
     sortBar.innerHTML="";
@@ -3024,6 +2808,179 @@ function displaySortBar2(){
 }
 
 
+function sortingFunction(arr11){
+    console.log(arr11);
+    // id=selectSort1,selectSort2,selectSort3,selectSort4....
+    let arr1=[];
+    let arr2=[];
+    let a=document.querySelector("#selectSort1").value;
+    let b=document.querySelector("#selectSort2").value;
+    let c=document.querySelector("#selectSort3").value;
+    let d=document.querySelector("#selectSort4").value;
+    let e=document.querySelector("#selectSort5").value;
+    let f=document.querySelector("#selectSort6").value;
+    let g=document.querySelector("#selectSort7").value;
+    let h=document.querySelector("#selectSort8").value;
+    
+    // condition2
+    if(b!="Product type"){
+            arr11.forEach(function(ele){
+                if(ele.Product==b) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr11;
+    }
+    // condition3
+    arr2=arr1;
+    arr1=[];
+    if(c!="Brand" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Brand==c) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition4
+    arr2=arr1;
+    arr1=[];
+    if(d!="Body Fit" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.BodyFit==d) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // conditon5
+    arr2=arr1;
+    arr1=[];
+    if(e!="Leather/Non Leather" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Leather==e) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition6
+    arr2=arr1;
+    arr1=[];
+    if(f!="Color" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Color==f) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition7
+    arr2=arr1;
+    arr1=[];
+    if(g!="Style" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Style==g) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition8
+    arr2=arr1;
+    arr1=[];
+    if(h!="Size" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Size==h) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    displayShoeMen(arr1);
+}
+function sortingFunction1(arr11){
+    console.log(arr11);
+    // id=selectSort1,selectSort2,selectSort3,selectSort4....
+    let arr1=[];
+    let arr2=[];
+    let a=document.querySelector("#selectSort1").value;
+    let b=document.querySelector("#selectSort2").value;
+    let c=document.querySelector("#selectSort3").value;
+    let d=document.querySelector("#selectSort4").value;
+    let f=document.querySelector("#selectSort6").value;
+    let g=document.querySelector("#selectSort7").value;
+    let h=document.querySelector("#selectSort8").value;
+    
+    // condition2
+    if(b!="Product type"){
+            arr11.forEach(function(ele){
+                if(ele.Product==b) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr11;
+    }
+    // condition3
+    arr2=arr1;
+    arr1=[];
+    if(c!="Brand" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Brand==c) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition4
+    arr2=arr1;
+    arr1=[];
+    if(d!="Body Fit" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.BodyFit==d) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition6
+    arr2=arr1;
+    arr1=[];
+    if(f!="Color" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Color==f) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition7
+    arr2=arr1;
+    arr1=[];
+    if(g!="Style" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Style==g) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    // condition8
+    arr2=arr1;
+    arr1=[];
+    if(h!="Size" && arr2.length!=0){
+            arr2.forEach(function(ele){
+                if(ele.Size==h) arr1.push(ele);
+            })
+    }
+    else {
+        arr1=arr2;
+    }
+    displayShoeMen3(arr1);
+}
+
+
+
 
 let container=document.createElement("div");
 container.setAttribute("id","container");
@@ -3067,6 +3024,26 @@ function displayShoeMen1(arr){
 
         blk.append(blkImg, blkName, blkPrice);
         container.append(blk);
+        blk.addEventListener("click",function(){
+            takeUserToProductFun(arr,arr.indexOf(ele))
+        })
+    })
+}
+function displayShoeMen3(arr){
+    document.querySelector("#container").innerHTML="";
+    arr.forEach(function(ele){
+        let blk=document.createElement("div");
+        let blkImg=document.createElement("img");
+        let blkName=document.createElement("p");
+        let blkPrice=document.createElement("h2");
+
+        blkImg.setAttribute("src",ele.ImageUrl);
+        blkName.innerText=ele.Brand+" "+ele.Product+" "+ele.Style+" in "+ele.Color;
+        blkPrice.innerText="£ "+ele.Price;
+
+        blk.append(blkImg, blkName, blkPrice);
+        container.append(blk);
+
         blk.addEventListener("click",function(){
             takeUserToProductFun(arr,arr.indexOf(ele))
         })
@@ -3290,11 +3267,18 @@ function sort1List16function(){
 function sort4List1function(){
     displaySortBar2(); 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
-    displayShoeMen(liveData); 
+    
+    document.querySelector("#selectSort2").value="Product type";
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+    sortingFunction1(liveData); 
 }
 function sort4List2function(){
     displaySortBar2(); 
-    document.querySelector("#selectSort2").value="T-Shirts & Vests";
+    document.querySelector("#selectSort2").value="T-shirts & Vests";
     
     document.querySelector("#selectSort3").value="Brand";
     document.querySelector("#selectSort4").value="Body Fit";
@@ -3318,24 +3302,190 @@ function sort4List3function(){
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
 }
-function sort4List4function(){}
-function sort4List5function(){}
-function sort4List6function(){}
-function sort4List7function(){}
-function sort4List8function(){}
-function sort4List9function(){}
-function sort4List10function(){}
-function sort4List11function(){}
-function sort4List12function(){}
-function sort4List13function(){}
-function sort4List14function(){}
-function sort4List15function(){}
-function sort4List16function(){}
-function sort4List17function(){}
-function sort4List18function(){}
-function sort4List19function(){}
-function sort4List20function(){}
-function sort4List21function(){}
+function sort4List4function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Shorts";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List5function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Swimwear";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List6function(){
+    displaySortBar2(); 
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List7function(){
+    displaySortBar2();
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List8function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Hoodies & Sweatshirts";
+
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List9function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Jackets & Coats";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List10function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Jeans";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List11function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Joggers";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List12function(){
+    displaySortBar2();
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List13function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Underwear";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List14function(){
+    displaySortBar2();
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List15function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Underwear";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List16function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort7").value="Trainer socks";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort2").value="Product type";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);    
+}
+function sort4List17function(){
+    displaySortBar2();
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List18function(){
+    displaySortBar2();
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List19function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Joggers";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List20function(){
+    displaySortBar2();
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
+function sort4List21function(){
+    displaySortBar2(); 
+    document.querySelector("#selectSort2").value="Underwear";
+    
+    document.querySelector("#selectSort3").value="Brand";
+    document.querySelector("#selectSort4").value="Body Fit";
+    document.querySelector("#selectSort6").value="Color";
+    document.querySelector("#selectSort7").value="Style";
+    document.querySelector("#selectSort8").value="Size";
+
+    liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
+    sortingFunction1(liveData);
+}
 
 
 
@@ -3362,7 +3512,7 @@ function womenMenSwapFun(){
     let c="selectedMen";
     localStorage.setItem("menWomenSwitchTabLS",c);
     arr=mensClothingData;
-    displayShoeMen(arr);
+    displayShoeMen3(arr);
 }
 
 function takeUserToProductFun(arr,index){

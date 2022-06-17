@@ -103,7 +103,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:15px;
-    margin:0px 30px;
+    padding:0px 30px;
 }
 #container>div:hover{
     cursor: pointer;
