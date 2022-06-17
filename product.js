@@ -171,7 +171,10 @@ function func() {
         // console.log(arr);
         localStorage.setItem("pData", JSON.stringify(arr));
 
-        window.location.href = "https://mail.google.com/mail/u/1/#inbox"
+        // window.location.href = "https://mail.google.com/mail/u/1/#inbox"
+
+
+
     } else {
         document.getElementById("sizes").style.border = "thin solid #d21345";
         document.getElementById("ple").innerText = "Please select from the available colour and size options"
@@ -180,5 +183,3 @@ function func() {
         document.getElementById("ple").style.backgroundColor = "#fae7ec";
     }
 }
-
-
