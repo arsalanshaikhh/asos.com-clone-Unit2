@@ -1,0 +1,812 @@
+MEN'S SHOES DATA
+
+[
+    {
+        "Product": "Boots",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 32",
+        "Style": "Chelsea",
+        "Color": "Black",
+        "Size": "UK 7",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Boots",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-chelsea-boots-in-grey-suede-with-black-sole/22676857-1-grey?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 40",
+        "Style": "Chelsea",
+        "Color": "Grey",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Boots",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-desert-boots-in-black-suede-with-leather-detail/20105409-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 40",
+        "Style": "Desert",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Boots",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-chelsea-boot-in-tan-suede/201419249-1-tan?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 34",
+        "Style": "Chelsea",
+        "Color": "Brown",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Loafers",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-loafers-in-brown-faux-leather-with-snake-effect/201422981-1-brown?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 34",
+        "Style": "Loafer",
+        "Color": "Brown",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Loafers",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-loafer-in-grey-faux-snake-with-snaffle/202005245-1-grey?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 34",
+        "Style": "Loafer",
+        "Color": "Grey",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Loafers",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-loafers-in-black-faux-suede-with-snaffle-detail/201815002-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 30",
+        "Style": "Loafer",
+        "Color": "Black",
+        "Size": "UK 7",
+        "BodyFit": "Wide Fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Loafers",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-driving-shoes-in-navy-suede-with-lace-detail/13643907-1-navy?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 40",
+        "Style": "Loafer",
+        "Color": "Navy",
+        "Size": "UK 7",
+        "BodyFit": "Wide Fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Shoes",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-nubuck-boat-shoes-in-blue/202353486-1-navyblazer?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 58",
+        "Style": "Boat Shoes",
+        "Color": "Blue",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Shoes",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-leather-shoes-in-black/201859319-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 32",
+        "Style": "Boat Shoes",
+        "Color": "Blue",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Loafers",
+        "Brand": "Dr Martens",
+        "ImageUrl": "https://images.asos-media.com/products/dr-martens-adrian-bex-loafers-in-black-smooth/201054008-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 149",
+        "Style": "Loafer",
+        "Color": "Blue",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Shoes",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-monk-shoe-in-black-velvet/202004123-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 40",
+        "Style": "Monk Strap",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Shoes",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-oxford-brogue-shoes-in-tan-leather/22668276-1-tan?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 42",
+        "Style": "Brogue",
+        "Color": "Brown",
+        "Size": "UK 6",
+        "BodyFit": "Wide Fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Diesel",
+        "ImageUrl": "https://images.asos-media.com/products/diesel-athos-hi-top-trainers-in-black/202016551-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 110",
+        "Style": "Lace-up",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-courtic-trainers-in-white-and-red/202152301-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 85",
+        "Style": "Lace-up",
+        "Color": "Red",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Converse",
+        "ImageUrl": "https://images.asos-media.com/products/converse-run-star-hike-trainers-in-black/201219936-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 95",
+        "Style": "Lace-up",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Vans",
+        "ImageUrl": "https://images.asos-media.com/products/vans-classic-slip-on-graffiti-trainers-in-black-and-white/201667752-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 60",
+        "Style": "Slipper Shoes",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-trainers-in-black/200732344-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 18",
+        "Style": "Boat Shoes",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Vans",
+        "ImageUrl": "https://images.asos-media.com/products/vans-old-skool-trainers-in-black-white/24151161-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 18",
+        "Style": "Boat Shoes",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Shoes",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-oxford-shoes-in-black-leather-with-toe-cap/23211813-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 40",
+        "Style": "Oxford",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Vans",
+        "ImageUrl": "https://images.asos-media.com/products/vans-sk8-hi-retro-court-trainers-in-multi/24365365-1-multi?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 74",
+        "Style": "Lace-up",
+        "Color": "Blue",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Vans",
+        "ImageUrl": "https://images.asos-media.com/products/vans-old-skool-graffiti-trainers-in-black-white/201667706-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 75",
+        "Style": "Lace-up",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Vans",
+        "ImageUrl": "https://images.asos-media.com/products/vans-slip-on-checkerboard-trainers-in-black/24147962-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 44",
+        "Style": "Slipper Shoes",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Vans",
+        "ImageUrl": "https://images.asos-media.com/products/vans-sk8-hi-peace-paisley-trainers-in-khaki-green/201667483-1-midgreen?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 80",
+        "Style": "Plimsoll",
+        "Color": "Green",
+        "Size": "UK 4",
+        "BodyFit": "Body fit",
+        "Leather": "Non Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-ozweego-celox-trainers-in-triple-black/201448439-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 90",
+        "Style": "Lace-up",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    },
+    {
+        "Product": "Trainers",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-ozelia-trainers-in-triple-beige/23535186-1-beige?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 63",
+        "Style": "Oxford",
+        "Color": "Gold",
+        "Size": "UK 6",
+        "BodyFit": "Body fit",
+        "Leather": "Leather"
+    }
+]
+
+
+
+
+
+
+
+MEN'S CLOTHING DATA
+
+
+[
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "River Island",
+        "ImageUrl": "https://images.asos-media.com/products/river-island-oversized-t-shirt-in-black/202300634-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 8.50",
+        "Style": "T-shirts",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-organic-cotton-blend-with-chicago-city-print/22994504-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 12.50",
+        "Style": "T-shirts",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-tonal-textures-t-shirt-in-chalk-white-with-back-logo/201207151-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 33",
+        "Style": "T-shirts",
+        "Color": "White",
+        "Size": "UK 3",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-sportswear-feel-vivid-t-shirt-in-white/202149325-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 27",
+        "Style": "T-shirts",
+        "Color": "White",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-premium-essential-heavyweight-oversized-t-shirt-in-seafoam/201492501-1-green?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 32.95",
+        "Style": "T-shirts",
+        "Color": "White",
+        "Size": "UK 5",
+        "BodyFit": "Plus size"
+    },
+    {
+        "Product": "Hoodies & Sweatshirts",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/nike-premium-essential-heavyweight-oversized-t-shirt-in-seafoam/201492501-1-green?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 32.95",
+        "Style": "Sweatshirts",
+        "Color": "White",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Hoodies & Sweatshirts",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-dark-future-sweatshirt-with-chest-print-logo-in-sand/200801746-1-beige?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Sweatshirts",
+        "Color": "Grey",
+        "Size": "UK 6",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-originals-oversized-vest-with-mind-body-soul-back-print-in-white/202763591-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Vests",
+        "Color": "White",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "T-shirts & Vests",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-originals-oversized-tank-vest-with-logo-in-sand/202749060-1-peyote?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Vests",
+        "Color": "White",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Shirts",
+        "Brand": "River Island",
+        "ImageUrl": "https://images.asos-media.com/products/river-island-textured-resort-shirt-in-black/203330456-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 30",
+        "Style": "Casual",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Shirts",
+        "Brand": "Levi's",
+        "ImageUrl": "https://images.asos-media.com/products/levis-printed-short-sleeve-shirt-in-black/202996479-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 56",
+        "Style": "Musical",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Shirts",
+        "Brand": "Levi's",
+        "ImageUrl": "https://images.asos-media.com/products/levis-barstow-denim-shirt-in-black-with-pockets/201440745-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 70",
+        "Style": "Casual",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Shirts",
+        "Brand": "Dr Denim",
+        "ImageUrl": "https://images.asos-media.com/products/dr-denim-frank-sage-check-shirt/202452361-1-sage?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 58",
+        "Style": "Casual",
+        "Color": "Grey",
+        "Size": "UK 4",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Shirts",
+        "Brand": "Hollister",
+        "ImageUrl": "https://images.asos-media.com/products/hollister-check-overshirt-in-navy/202210233-1-navy?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 39",
+        "Style": "Regular",
+        "Color": "Red",
+        "Size": "UK 5",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Jeans",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-intelligence-liam-skinny-fit-stretch-jeans-in-blue-black/202084011-1-blueblackdenim?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 37",
+        "Style": "Slim",
+        "Color": "Blue",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Jeans",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-cone-mill-denim-skinny-fit-american-classic-jeans-in-washed-black-with-knee-rip/200765439-1-washedblack?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 36",
+        "Style": "Skinny",
+        "Color": "Black",
+        "Size": "UK 3",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Jeans",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-intelligence-mike-relaxed-fit-jeans-in-light-blue/202078928-1-bluedenim?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 37",
+        "Style": "Relaxed",
+        "Color": "Blue",
+        "Size": "UK 4",
+        "BodyFit": "shorts"
+    },
+    {
+        "Product": "Jeans",
+        "Brand": "Calvin Klein",
+        "ImageUrl": "https://images.asos-media.com/products/calvin-klein-jeans-skinny-fit-jeans-in-mid-wash/202185930-1-midblue?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 89",
+        "Style": "Skinny",
+        "Color": "Blue",
+        "Size": "UK 6",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Jeans",
+        "Brand": "Levi's",
+        "ImageUrl": "https://images.asos-media.com/products/levis-512-slim-taper-lo-ball-jeans-in-blue/202291261-1-midblue?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 63",
+        "Style": "Slim",
+        "Color": "Blue",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "River Island",
+        "ImageUrl": "https://images.asos-media.com/products/river-island-zip-through-jacket-with-print-in-dark-purple/202521301-1-purpledark?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 74",
+        "Style": "Jackets",
+        "Color": "Multi",
+        "Size": "UK 5",
+        "BodyFit": "shorts"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-harrington-denim-jacket-in-black/202003438-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 42",
+        "Style": "Denim",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "shorts"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-tonal-textures-collegiate-varsity-jacket-in-grey-with-back-logo/201217425-1-grey?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 77",
+        "Style": "Jackets",
+        "Color": "Grey",
+        "Size": "UK 4",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-essentials-lightweight-puffer-jacket-in-beige/202065195-1-elmwood?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 37",
+        "Style": "Jackets",
+        "Color": "Gold",
+        "Size": "UK 4.5",
+        "BodyFit": "shorts"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-essentials-parka-with-fleece-lined-hood-in-beige/200931956-1-elmwood?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 100",
+        "Style": "Jackets",
+        "Color": "Yellow",
+        "Size": "UK 4",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-padded-trench-coat-with-quilted-lining-in-black/22638043-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 58",
+        "Style": "Coats",
+        "Color": "Black",
+        "Size": "UK 3",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Jackets & Coats",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-legacy-therma-fit-insulated-long-parka-coat-in-khaki/23600789-1-khaki?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 84",
+        "Style": "Coats",
+        "Color": "Green",
+        "Size": "UK 4",
+        "BodyFit": "Plus size"
+    },
+    {
+        "Product": "Joggers",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-training-6-1-dri-fit-tapered-joggers-in-black/201540409-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 58",
+        "Style": "Joggers",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Joggers",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-sportswear-essential-3-stripe-joggers-in-navy/201474872-1-navy?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 33",
+        "Style": "Joggers",
+        "Color": "Navy",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Joggers",
+        "Brand": "Puma",
+        "ImageUrl": "https://images.asos-media.com/products/puma-essentials-small-logo-slim-joggers-in-black/23817375-1-pumablack?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 28",
+        "Style": "Slim",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Joggers",
+        "Brand": "Hollister",
+        "ImageUrl": "https://images.asos-media.com/products/hollister-utility-leg-logo-loose-joggers-in-olive-green/202213920-1-olivegreen?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 25",
+        "Style": "Loose",
+        "Color": "Green",
+        "Size": "UK 5",
+        "BodyFit": "shorts"
+    },
+    {
+        "Product": "Joggers",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-actual-co-ord-relaxed-jogger-with-curved-cut-and-sew-detailing-in-multi/202753318-1-cream?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 30",
+        "Style": "Relaxed",
+        "Color": "Multi",
+        "Size": "UK 4",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "River Island",
+        "ImageUrl": "https://images.asos-media.com/products/river-island-weekday-5-pack-of-socks-in-black/203156087-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Regular",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/river-island-weekday-5-pack-of-socks-in-black/203156087-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 7.50",
+        "Style": "Trainer socks",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-training-3-pack-trainer-socks-in-multi/21904904-1-multi?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 10.50",
+        "Style": "Trainer socks",
+        "Color": "Multi",
+        "Size": "UK 6",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-5-pack-tennis-socks-with-print-in-white/202674914-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Trainer socks",
+        "Color": "White",
+        "Size": "UK 4.5",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-happy-earth-large-back-print-earth-trefoil-logo-t-shirt-in-off-white/202098107-1-offwhite?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 30",
+        "Style": "Football Shirts",
+        "Color": "White",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Timberland",
+        "ImageUrl": "https://images.asos-media.com/products/timberland-utility-back-print-t-shirt-navy/201717868-1-navy?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 40",
+        "Style": "Football Shirts",
+        "Color": "Blue",
+        "Size": "UK 4",
+        "BodyFit": "Tall"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-authorized-personnel-printed-heavyweight-oversized-t-shirt-in-black/201480542-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 37",
+        "Style": "Football Shirts",
+        "Color": "Black",
+        "Size": "UK 4.5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Underwear",
+        "Brand": "Calvin Klein",
+        "ImageUrl": "https://images.asos-media.com/products/calvin-klein-intense-power-2-pack-cotton-trunks-with-contrast-waistband-in-black/202413416-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 39",
+        "Style": "Trunks",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Underwear",
+        "Brand": "Calvin Klein",
+        "ImageUrl": "https://images.asos-media.com/products/calvin-klein-modern-structure-sleep-boxers-in-black-print/202413514-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 27",
+        "Style": "Boxers",
+        "Color": "Black",
+        "Size": "UK 4",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Underwear",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-3-pack-trunks-in-black-with-asos-branded-waistband/202779018-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Trunks",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Underwear",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-dri-fit-reluxe-2-pack-trunks-in-red-pink/201417366-1-redpink?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 29",
+        "Style": "Trunks",
+        "Color": "Red",
+        "Size": "UK 6",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Underwear",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-briefs-in-wide-mesh-in-black/22100079-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 6",
+        "Style": "Briefs",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Shorts",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-basketball-nba-brooklyn-nets-swingman-icon-edition-unisex-shorts-in-black/201479376-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 60",
+        "Style": "Shorts",
+        "Color": "Black",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Shorts",
+        "Brand": "ASOS DESIGN",
+        "ImageUrl": "https://images.asos-media.com/products/asos-design-relaxed-towelling-short-with-embroidery-detail-in-pink/202547790-1-bleachedmauve?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 24",
+        "Style": "Relaxed",
+        "Color": "Pink",
+        "Size": "UK 4",
+        "BodyFit": "shorts"
+    },
+    {
+        "Product": "Shorts",
+        "Brand": "Jack & Jones",
+        "ImageUrl": "https://images.asos-media.com/products/jack-jones-denim-shorts-in-slim-fit-with-rips-in-light-blue/201858038-1-bluedenim?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 27",
+        "Style": "Slim",
+        "Color": "Blue",
+        "Size": "UK 5",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Shorts",
+        "Brand": "Reebok",
+        "ImageUrl": "https://images.asos-media.com/products/reebok-small-logo-jersey-shorts-in-grey/200968340-1-grey?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 22",
+        "Style": "Shorts",
+        "Color": "Grey",
+        "Size": "UK 4",
+        "BodyFit": "Body fit"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Nike",
+        "ImageUrl": "https://images.asos-media.com/products/nike-l91-metal-futura-logo-cap-in-black-and-gold/200850182-1-black?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 22",
+        "Style": "Cap",
+        "Color": "Black",
+        "Size": "UK 6",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Puma",
+        "ImageUrl": "https://images.asos-media.com/products/puma-ess-cap-in-white/201806122-1-whitebigcat?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 7",
+        "Style": "Cap",
+        "Color": "White",
+        "Size": "UK 6",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/adidas-originals-adicolor-trefoil-bucket-hat-in-white/201362020-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 23",
+        "Style": "Hats",
+        "Color": "White",
+        "Size": "UK 6",
+        "BodyFit": "Main Collection"
+    },
+    {
+        "Product": "Sportswear",
+        "Brand": "Adidas",
+        "ImageUrl": "https://images.asos-media.com/products/nike-golf-dura-feel-x-regular-left-hand-glove-in-white/201364898-1-white?$n_320w$&wid=317&fit=constrain",
+        "Price": "£ 13",
+        "Style": "Gloves",
+        "Color": "White",
+        "Size": "UK 5",
+        "BodyFit": "Main Collection"
+    }
+]
