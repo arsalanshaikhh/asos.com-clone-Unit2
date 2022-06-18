@@ -3,22 +3,24 @@
 // console.log(button1);
 let x = document.getElementById("btn2");
 x.disabled;
-
+let abcde = false;
 let paymentArr = JSON.parse(localStorage.getItem("paymentData")) || [];
 function fun2() {
-  console.log("vvv");
-  let x = document.querySelector("body");
-  x.innerHTML = "";
-  //   let div = document.createElement("div");
-  let ab = document.createElement("h3");
-  ab.innerText = "Tracking ID : 276183489121";
-  let y = document.createElement("img");
-  y.setAttribute("id", "gif");
-  y.setAttribute(
-    "src",
-    "https://cdn.dribbble.com/users/3475837/screenshots/11442860/media/8d53857df0ecda3b496bed2d012cbfd9.gif"
-  );
-  x.append(y, ab);
+  if (abcde == true) {
+    console.log("vvv");
+    let x = document.querySelector("body");
+    x.innerHTML = "";
+    //   let div = document.createElement("div");
+    let ab = document.createElement("h3");
+    ab.innerText = "Tracking ID : 276183489121";
+    let y = document.createElement("img");
+    y.setAttribute("id", "gif");
+    y.setAttribute(
+      "src",
+      "https://cdn.dribbble.com/users/3475837/screenshots/11442860/media/8d53857df0ecda3b496bed2d012cbfd9.gif"
+    );
+    x.append(y, ab);
+  }
 }
 function fun() {
   let cardNumber = document.querySelector("#cardNumber").value;
@@ -26,18 +28,22 @@ function fun() {
 
   if (cardNumber.length != 16) {
     alert("Please Enter Correct Credit/Debit Card Number");
+    return (window.location.href = "payment.html");
   }
   let date = document.querySelector("#date").value;
   if (date.length < 1) {
     alert("Please Enter Expiry Date");
+    return (window.location.href = "payment.html");
   }
   let name = document.querySelector("#name").value;
   if (name.length < 1) {
     alert("Please Enter Name");
+    return (window.location.href = "payment.html");
   }
   let cvv = document.querySelector("#cvv").value;
   if (cvv.length != 3) {
     alert("Please Enter Correct Cvv");
+    return (window.location.href = "payment.html");
   }
   let check = document.querySelector("#check").checked;
 
@@ -53,4 +59,18 @@ function fun() {
   }
   x.enable;
   x.style.backgroundColor = "green";
+  abcde = true;
+  let con = document.querySelector(".container");
+  con.innerHTML = "";
+  let h1 = document.createElement("h1");
+  h1.innerText = "ADD CREDIT/DEBIT CARD";
+  let p1 = document.createElement("p");
+  let p2 = document.createElement("p");
+  let p3 = document.createElement("p");
+  let p4 = document.createElement("p");
+  p3.innerText = name;
+  p1.innerText = cardNumber;
+  p2.innerText = date;
+  p4.innerText = cvv;
+  con.append(h1, p3, p1, p2, p4);
 }
