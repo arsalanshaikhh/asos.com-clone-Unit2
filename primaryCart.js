@@ -37,18 +37,22 @@ pArr.forEach(function (elem, index) {
     tImg.setAttribute("id", "pic");
 
     let fDvi = document.createElement("div");
+    fDvi.style.fontSize = "15px"
 
     let tPri = document.createElement("h6");
     tPri.innerText = "£ " + elem.price;
+    tPri.style.fontSize = "16px"
 
     let tPar = document.createElement("p");
     tPar.innerText = elem.name;
 
     let tCol = document.createElement("h6");
     tCol.innerText = elem.color;
+    tCol.style.fontSize = "16px"
 
     let tSiz = document.createElement("h6");
     tSiz.innerText = elem.size;
+    tSiz.style.fontSize = "16px"
 
     let rev = document.createElement("button");
     rev.innerText = "Remove";
@@ -70,7 +74,7 @@ pArr.forEach(function (elem, index) {
 
     var opt = document.createElement("option");
     opt.setAttribute("value", "");
-    var nod = document.createTextNode("Quantity");
+    var nod = document.createTextNode("Qtantity:");
     opt.appendChild(nod);
 
     sel.appendChild(opt);
@@ -169,6 +173,8 @@ pArr.forEach(function (elem, index) {
 
         document.querySelector("#z3>div:nth-child(2)").innerText =
             "£ " + (sum + 5).toFixed(2);
+        document.querySelector("#z3>div:nth-child(2)").style.fontSize = "20px"
+        document.querySelector("#z3>div:nth-child(2)").style.fontweight = "600"
     }
     if (pArr.length == 1) {
         document.querySelector("#m1>p").innerText = pArr.length + " Item";
