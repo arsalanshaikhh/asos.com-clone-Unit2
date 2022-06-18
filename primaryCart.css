@@ -111,6 +111,10 @@
     width: 60%;
     height: 14%;
     margin-bottom:7%;
+     padding-left: 3%;
+     font-weight:900;
+     /* color: rgb(193, 255, 193);  */
+    /* color: rgb(255, 218, 218);  */
 
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -163,13 +167,14 @@ cursor: pointer;
     padding: 3%;
     font-size:20px;
     font-weight:300;
-    text-decoration:overline
+    text-decoration:overline;
   }
   #m2 {
     /* border: 1px solid black; */
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid black;
   }
 
   #item{

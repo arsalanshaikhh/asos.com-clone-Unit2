@@ -175,6 +175,12 @@ pArr.forEach(function (elem, index) {
             "£ " + (sum + 5).toFixed(2);
         document.querySelector("#z3>div:nth-child(2)").style.fontSize = "20px"
         document.querySelector("#z3>div:nth-child(2)").style.fontweight = "600"
+
+
+
+
+
+
     }
     if (pArr.length == 1) {
         document.querySelector("#m1>p").innerText = pArr.length + " Item";
@@ -194,10 +200,18 @@ function code() {
         let get = document.createElement("div");
         document.querySelector("#off").innerHTML = "";
         get.innerText = "Congratulations! 16% off on current order"
-        get.style.border = "1px solid black"
+        get.style.border = "0px solid black"
         get.style.padding = "3%"
         get.style.marginTop = "5%"
         get.style.marginBottom = "-5%"
+        get.style.backgroundColor = "rgb(193, 255, 193)"
+
+
+
+        // document.querySelector("#z3>div:nth-child(2)").innerText =
+        //     "£ " + (0.84 * (sum + 5)).toFixed(2);
+        // document.querySelector("#z3>div:nth-child(2)").style.fontSize = "20px"
+        // document.querySelector("#z3>div:nth-child(2)").style.fontweight = "600"
 
         document.querySelector("#off").append(get)
 
@@ -206,10 +220,11 @@ function code() {
         let get = document.createElement("div");
         document.querySelector("#off").innerHTML = "";
         get.innerText = "No offer available"
-        get.style.border = "1px solid black"
+        get.style.border = "0px solid black"
         get.style.padding = "3%"
         get.style.marginTop = "5%"
         get.style.marginBottom = "-5%"
+        get.style.backgroundColor = "rgb(255, 178, 178)"
 
         document.querySelector("#off").append(get)
 
