@@ -6,27 +6,6 @@ let pArr = JSON.parse(localStorage.getItem("pData")) || [
         color: "Black",
         size: "UK 8.5",
     },
-    {
-        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-        price: 32,
-        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
-        color: "Black",
-        size: "UK 8.5",
-    },
-    {
-        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-        price: 32,
-        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
-        color: "Black",
-        size: "UK 8.5",
-    },
-    {
-        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-        price: 32,
-        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
-        color: "Black",
-        size: "UK 8.5",
-    },
 ];
 
 
@@ -276,7 +255,22 @@ if (oArr.length == 1) {
     document.querySelector("#pay>button").disabled = true;
     document.querySelector("#pay>button").style.cursor = "not-allowed";
 
-    document.querySelector("#m1>div").innerText = "! Select Quantity";
+    document.querySelector("#m1>div").innerText = "Select Quantity";
+    document.querySelector("#m1>div").style.color = "red";
+    document.querySelector("#m1>div").style.fontWeight = "100";
+    document.querySelector("#m1>div").style.fontSize = "15px";
+}
+
+if (oArr.length == 0) {
+    document.querySelector("#c2>button").style.backgroundColor = "rgb(142, 142, 142)";
+    document.querySelector("#c2>button").disabled = true;
+    document.querySelector("#c2>button").style.cursor = "not-allowed";
+
+    document.querySelector("#pay>button").style.backgroundColor = "rgb(142, 142, 142)";
+    document.querySelector("#pay>button").disabled = true;
+    document.querySelector("#pay>button").style.cursor = "not-allowed";
+
+    document.querySelector("#m1>div").innerText = "CART IS EMPTY !";
     document.querySelector("#m1>div").style.color = "red";
     document.querySelector("#m1>div").style.fontWeight = "100";
     document.querySelector("#m1>div").style.fontSize = "15px";
