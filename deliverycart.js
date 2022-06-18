@@ -4,35 +4,42 @@ let btn4 = document.querySelector("#btn4");
 btn2.disabled;
 btn3.disabled;
 btn4.disabled;
-
+let abcde = false;
 function fun1() {
   let First = document.querySelector("#First").value;
   if (First.length < 1) {
     alert("Please Enter First Name");
+    return (window.location.href = "deliverycart.html");
   }
   let Last = document.querySelector("#Last").value;
   if (Last.length < 1) {
     alert("Please Enter Last Name");
+    return (window.location.href = "deliverycart.html");
   }
   let Mobile = document.querySelector("#Mobile").value;
   if (Mobile.length < 10 && Mobile.length < 10) {
     alert("Please Enter Correct Mobile Number");
+    return (window.location.href = "deliverycart.html");
   }
   let Address = document.querySelector("#Address").value;
   if (Address.length < 1) {
     alert("Please Enter Correct Address");
+    return (window.location.href = "deliverycart.html");
   }
   let City = document.querySelector("#City").value;
   if (City.length < 1) {
     alert("Please Enter City Name");
+    return (window.location.href = "deliverycart.html");
   }
   let Country = document.querySelector("#Country").value;
   if (Country.length < 1) {
     alert("Please Enter Country Name");
+    return (window.location.href = "deliverycart.html");
   }
   let Postcode = document.querySelector("#Postcode").value;
   if (Postcode.length < 6 && Postcode.length > 6) {
     alert("Please Enter Correct City");
+    return (window.location.href = "deliverycart.html");
   }
 
   let p1 = document.createElement("p");
@@ -59,8 +66,11 @@ function fun1() {
   btn3.style.color = "black";
   btn4.enable;
   btn4.style.backgroundColor = "green";
+  abcde = true;
 }
 
 function fun2() {
-  window.location.href = "payment.html";
+  if (abcde == true) {
+    window.location.href = "payment.html";
+  }
 }
