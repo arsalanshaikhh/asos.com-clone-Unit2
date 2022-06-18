@@ -10,13 +10,15 @@ function fun2() {
   let x = document.querySelector("body");
   x.innerHTML = "";
   //   let div = document.createElement("div");
+  let ab = document.createElement("h3");
+  ab.innerText = "Tracking ID : 276183489121";
   let y = document.createElement("img");
   y.setAttribute("id", "gif");
   y.setAttribute(
     "src",
     "https://cdn.dribbble.com/users/3475837/screenshots/11442860/media/8d53857df0ecda3b496bed2d012cbfd9.gif"
   );
-  x.append(y);
+  x.append(y, ab);
 }
 function fun() {
   let cardNumber = document.querySelector("#cardNumber").value;

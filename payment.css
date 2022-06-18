@@ -5,7 +5,7 @@
   background-color: #f2f2f2;
 }
 nav {
-  width: 70%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -43,13 +43,14 @@ nav > div:last-child {
 }
 .container {
   background-color: white;
-  width: 30%;
+  width: 42%;
   margin: auto;
   padding: 18px;
 }
 h1 {
   font-size: 18px;
   background-color: white;
+  margin-left: 8%;
 }
 .container label {
   display: block;
@@ -62,6 +63,7 @@ h1 {
   padding-bottom: 12px;
   font-size: 0.875rem;
   background-color: white;
+  margin-left: 8%;
 }
 .container input {
   font-size: 16px;
@@ -72,9 +74,11 @@ h1 {
   font-weight: normal;
   letter-spacing: normal;
   border: 1px solid #999;
+  margin-left: 8%;
 }
 #check {
   border: 1px solid REDS;
+  margin-left: 8%;
 }
 #man {
   display: flex;
@@ -88,6 +92,7 @@ h1 {
   border: none;
   color: #fff;
   cursor: pointer;
+  margin-left: 8%;
 
   text-align: center;
   padding: 20px;
@@ -115,6 +120,8 @@ h2 {
   padding: 12px;
   font-size: 0.875rem;
   background-color: white;
+  padding-left: 0px;
+  margin-left: 8%;
 }
 
 #img1 {
@@ -122,7 +129,7 @@ h2 {
 }
 .container2 {
   background-color: white;
-  width: 30%;
+  width: 44%;
   margin: auto;
   padding: 18px;
 }
@@ -154,4 +161,11 @@ u {
   width: 50%;
   margin: auto;
   border-radius: 50%;
+}
+
+h3 {
+  color: black;
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
 }
