@@ -16,7 +16,13 @@ let pArr = JSON.parse(localStorage.getItem("pData")) || [
 ];
 
 // localStorage.setItem("logInUserData", JSON.stringify(elem));
-// document.querySelector("#c3>div+div").innerText =
+
+let info = {
+    email: "aryandev1305@gmail.com"
+}
+
+// let info = JSON.parse(localStorage.getItem("logInUserData"));
+document.querySelector("#c3>p+p").innerText = info.email;
 
 let obj = {};
 let count1 = 0;
