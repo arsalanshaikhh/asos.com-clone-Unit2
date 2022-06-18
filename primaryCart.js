@@ -226,7 +226,6 @@ function check() {
 
         if (oArr[i].value == "") {
             oArr[i].style.border = "1px solid red"
-            count++
             document.querySelector("#c2>button").style.backgroundColor = "rgb(142, 142, 142)";
             document.querySelector("#c2>button").disabled = true;
             document.querySelector("#c2>button").style.cursor = "not-allowed";
@@ -239,9 +238,10 @@ function check() {
             document.querySelector("#m1>div").style.color = "red";
             document.querySelector("#m1>div").style.fontWeight = "100";
             document.querySelector("#m1>div").style.fontSize = "15px";
+            count++
         }
         else {
-            oArr[i].style.border = "1px solid black"
+            oArr[i].style.border = "3px solid black"
         }
     }
     if (count == 0) {
@@ -278,8 +278,20 @@ function code() {
 
         document.querySelector("#off").append(get)
 
-        // let dis = document.querySelector("#z3>div:nth-child(2)").innerText;
-        // console.log(dis);
+        let dis = document.querySelector("#z3>div:nth-child(2)").innerText;
+        console.log(dis);
+
+        let bag = ""
+        for (let j = 0; j < dis.length; j++) {
+            if (dis[j] !== "£") {
+                bag = bag + dis[j];
+            }
+        }
+        console.log(Number(bag));
+
+        // document.querySelector("#z3>div:nth-child(2)").innerText = ""
+        document.querySelector("#z3>div:nth-child(2)").innerText = "'new price' £ " + ((0.84 * Number(bag)).toFixed(2));
+        console.log(dis);
 
 
     } else {
