@@ -338,7 +338,7 @@ function code() {
 function payIt() {
 
 
+    window.open("deliverycart.html", '_blank');
 
-    window.open("payment.html", '_blank');
 
 }
