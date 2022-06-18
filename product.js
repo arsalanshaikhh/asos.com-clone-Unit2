@@ -204,7 +204,7 @@ function func() {
 
 
         function opened() {
-            // window.location.href = "primaryCart.html"
+            window.location.href = "primaryCart.html"
         }
 
 
