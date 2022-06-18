@@ -4,7 +4,7 @@
 }
 
 body{
-	padding-top: 300px;
+	padding-top: 30px;
 }
 /* style */
 #content-wrapper{
@@ -74,6 +74,9 @@ margin-bottom: 10%;
 #bag>button:nth-child(1):hover{
 	background-color:#016c3a;
 }
+
+
+
 
 #bag>button:nth-child(2){
   background-color:rgb(226, 226, 226);

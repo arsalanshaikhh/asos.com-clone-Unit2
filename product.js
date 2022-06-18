@@ -166,6 +166,8 @@ function func() {
             size: document.querySelector("#sizes").value,
         };
 
+        arr.push(obj);
+        localStorage.setItem("pData", JSON.stringify(arr));
 
         // console.log(arr);
         document.getElementById("ple").innerText = "Added to bag"
@@ -173,14 +175,36 @@ function func() {
         document.getElementById("ple").style.padding = "2%"
         document.getElementById("ple").style.backgroundColor = "rgb(224, 255, 224)";
 
-        document.querySelector("#bu").innerText = "Proceed to Cart"
-        document.querySelector("#bu").addEventListener("click", opened)
+        document.querySelector("#bag").innerHTML = "";
+        let nub = document.createElement("button");
+        nub.setAttribute("id", "nu")
+        nub.innerText = "Proceed to Cart"
+        document.querySelector("#bag").append(nub)
+        nub.style.border = "2px solid black"
+        nub.style.padding = "2%"
+        nub.style.borderRadius = "3px"
+        document.querySelector("#nu").addEventListener("click", opened)
+
+        let hea = document.createElement("button");
+        hea.innerText = "🤍"
+        hea.setAttribute("id", "heart")
+
+        hea.addEventListener("click", toggle);
+        document.querySelector("#bag").append(hea)
+        function toggle() {
+            const like = button.textContent;
+            if (like == whiteHeart) {
+                hea.textContent = blackHeart;
+                hea.setAttribute("id", "none")
+            } else {
+                hea.textContent = whiteHeart;
+                hea.setAttribute("id", "heart")
+            }
+        }
+
 
         function opened() {
-            // localStorage.removeItem("pData");
-            arr.push(obj);
-            localStorage.setItem("pData", JSON.stringify(arr));
-            window.location.href = "primaryCart.html"
+            // window.location.href = "primaryCart.html"
         }
 
 
