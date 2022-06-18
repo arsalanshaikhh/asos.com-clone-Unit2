@@ -34,6 +34,7 @@ pArr.forEach(function (elem, index) {
 
     let tImg = document.createElement("img");
     tImg.setAttribute("src", elem.img);
+    tImg.setAttribute("id", "pic");
 
     let fDvi = document.createElement("div");
 
