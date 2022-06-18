@@ -166,10 +166,8 @@ function func() {
             size: document.querySelector("#sizes").value,
         };
 
-        arr.push(obj);
 
         // console.log(arr);
-        localStorage.setItem("pData", JSON.stringify(arr));
         document.getElementById("ple").innerText = "Added to bag"
 
         document.getElementById("ple").style.padding = "2%"
@@ -179,8 +177,10 @@ function func() {
         document.querySelector("#bu").addEventListener("click", opened)
 
         function opened() {
-
-            window.location.href = "primaryCart.html"
+            // localStorage.removeItem("pData");
+            arr.push(obj);
+            localStorage.setItem("pData", JSON.stringify(arr));
+            // window.location.href = "primaryCart.html"
         }
 
 
