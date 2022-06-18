@@ -234,6 +234,11 @@ function check() {
             document.querySelector("#pay>button").style.backgroundColor = "rgb(142, 142, 142)";
             document.querySelector("#pay>button").disabled = true;
             document.querySelector("#pay>button").style.cursor = "not-allowed";
+
+            document.querySelector("#m1>div").innerText = "! Select Quantity";
+            document.querySelector("#m1>div").style.color = "red";
+            document.querySelector("#m1>div").style.fontWeight = "100";
+            document.querySelector("#m1>div").style.fontSize = "15px";
         }
         else {
             oArr[i].style.border = "1px solid black"
@@ -242,11 +247,13 @@ function check() {
     if (count == 0) {
         document.querySelector("#c2>button").style.backgroundColor = "black";
         document.querySelector("#c2>button").disabled = false;
-        document.querySelector("#pay>button").style.cursor = "pointer";
+        document.querySelector("#c2>button").style.cursor = "pointer";
 
         document.querySelector("#pay>button").style.backgroundColor = "black";
         document.querySelector("#pay>button").disabled = false;
         document.querySelector("#pay>button").style.cursor = "pointer";
+
+        document.querySelector("#m1>div").innerText = "";
 
     }
 }
