@@ -3,7 +3,9 @@
     padding:0px;
 }
 #headPart1{
+    width:100%;
     display: flex;
+    margin: auto;
     justify-content: flex-end;
     align-items: center;
     margin:0px;
@@ -35,6 +37,7 @@
 
 
 #headPart2{
+    width:100%;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 10fr 1fr 1fr 1fr;
     justify-content: center;
@@ -42,6 +45,7 @@
     /* border: 1px solid black; */
     background-color: #2d2d2d;
     padding:0px;
+    position: relative;
 }
 #headPart2>div{
     /* border: 1px solid white; */
@@ -70,22 +74,65 @@
     border-radius: 25px;
 }
 #headPart2>div:nth-child(5)>img,#headPart2>div:nth-child(6)>img,#headPart2>div:nth-child(7)>img{
-    width: 40%;
+    width: 100%;
     background-color:#2d2d2d;
     border-radius: 50%;
 }
 
+#asosUserInfoHeading{
+    cursor: pointer;
+}
+#asosUserInfoDispHeading{
+    position: absolute;
+    right:10%;
+    list-style: none;
+    width:20%;
+
+}
+#asosUserInfoDispHeading>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    padding:0px 10px;
+}
+#asosUserInfoDispHeading>div:first-child>p{
+    font-size: 15px;
+    padding:5px 0px;
+}
+#asosUserInfoDispHeading>div:first-child>p:nth-child(1){
+    font-weight: bold;
+}
+#asosUserInfoDispHeading>div:first-child>p:nth-child(2){
+    text-decoration: underline;
+    color: #706b6b;
+}
+#asosUserInfoDispHeading>div:last-child{
+    background-color: white;
+    padding:0px 20px;
+}
+#asosUserInfoDispHeading>div:last-child>ul{
+    list-style: none;
+}
+#asosUserInfoDispHeading>div:last-child>ul>li{
+    padding:10px 0px;
+}
+
+#crossUserInfoHeading{
+    cursor: pointer;
+}
+
 
 #headPart3{
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(14,1fr) 3fr;
-    padding-right: 200px;
+    grid-template-columns: repeat(13,1fr) ;
+    /* padding-right: 200px; */
     justify-content: flex-start;
-    padding:0px 20px;
+    /* padding:0px 20px; */
     background-color: #525050;
     color: white;
-    font-size: 17px;
-    padding-left: 40px;
+    font-size: 14px;
+    /* padding-left: 40px; */
 }
 #headPart3>div{
     padding:20px;
@@ -100,6 +147,7 @@
 }
 
 #container{
+    width:100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:15px;

@@ -654,9 +654,27 @@ function dropDownShow8(event){
     div4.append(iiimg1div,iiimg2div);
 }
 document.querySelector("#headPart4").addEventListener("mouseleave",dropDownremoverShoe2)
+document.querySelector("#headPart2").addEventListener("mouseover",dropDownremoverShoe2)
 function dropDownremoverShoe2(event){
     document.querySelector("#headPart4").style.display="none";
 }
+
+
+let container=document.querySelector("#container");
+let menHomePageBlock1=document.querySelector("#top");
+let menHomePageBlock2=document.querySelector("#second");
+let menHomePageBlock3=document.querySelector("#third");
+let menHomePageBlock4=document.querySelector("#forth");
+let menHomePageBlock5=document.querySelector("#fifth");
+let menHomePageBlock6=document.querySelector("#bottom");
+
+let womenHomePageBlock1=document.querySelector("#femaleHomePageBlock1");
+let womenHomePageBlock2=document.querySelector("#femaleHomePageBlock2");
+let womenHomePageBlock3=document.querySelector("#femaleHomePageBlock3");
+let womenHomePageBlock4=document.querySelector("#femaleHomePageBlock4");
+let womenHomePageBlock5=document.querySelector("#femaleHomePageBlock5");
+let womenHomePageBlock6=document.querySelector("#femaleHomePageBlock6");
+
 
 
 // DATA
@@ -2018,16 +2036,36 @@ localStorage.setItem("shoeProdDataLS",JSON.stringify(shoeProdDataArr));
 
 
 let arr;
-let interName1=localStorage.getItem("menWomenSwitchTabLS");
+let interName1=localStorage.getItem("menWomenSwitchTabLS")||"";
 if(interName1=="selectedWomen"){
+    let a=document.querySelector("#asosWomenHeading");
+    let b=document.querySelector("#asosMenHeading");
+    a.style.backgroundColor="#525050";
+    b.style.backgroundColor="#2d2d2d";
     arr=womensClothingData;
+    
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
 }
-else arr=mensClothingData;
+else {
+    let a=document.querySelector("#asosWomenHeading");
+    let b=document.querySelector("#asosMenHeading");
+    b.style.backgroundColor="#525050";
+    a.style.backgroundColor="#2d2d2d";
+    arr=mensClothingData;
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
+}
 
-let sortBar=document.createElement("div");
-sortBar.setAttribute("id","sortbar");
-sortBar.style.backgroundColor="transparent"
-document.querySelector("body").append(sortBar);
+let sortBar=document.querySelector("#sortbar");
 
   
 function displaySortBar1(){
@@ -2982,9 +3020,8 @@ function sortingFunction1(arr11){
 
 
 
-let container=document.createElement("div");
-container.setAttribute("id","container");
-document.querySelector("body").append(container);
+
+
 
 
 // displayShoeMen(arr);
@@ -3055,11 +3092,36 @@ function sort1List1function(){
     displaySortBar1();
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     displayShoeMen(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List2function(){
     displaySortBar1();
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     displayShoeMen(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List3function(){
     displaySortBar1();
@@ -3074,11 +3136,36 @@ function sort1List3function(){
     document.querySelector("#selectSort8").value="Size";
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List4function(){
     displaySortBar1();
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     displayShoeMen(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List5function(){
     displaySortBar1();
@@ -3093,6 +3180,19 @@ function sort1List5function(){
     document.querySelector("#selectSort8").value="Size";
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List6function(){
     displaySortBar1();
@@ -3108,11 +3208,38 @@ function sort1List6function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List7function(){
     displaySortBar1();
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     displayShoeMen(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List8function(){
     displaySortBar1();
@@ -3128,6 +3255,19 @@ function sort1List8function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List9function(){
     displaySortBar1();
@@ -3143,6 +3283,19 @@ function sort1List9function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List10function(){
     displaySortBar1();
@@ -3158,6 +3311,19 @@ function sort1List10function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List11function(){
     displaySortBar1();
@@ -3172,6 +3338,19 @@ function sort1List11function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 
 
@@ -3188,6 +3367,19 @@ function sort1List011function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List12function(){
     displaySortBar1();
@@ -3203,6 +3395,19 @@ function sort1List12function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List13function(){
     displaySortBar1();
@@ -3218,6 +3423,19 @@ function sort1List13function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List14function(){
     displaySortBar1();
@@ -3231,7 +3449,20 @@ function sort1List14function(){
     document.querySelector("#selectSort8").value="Size";
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
-    sortingFunction(liveData);  
+    sortingFunction(liveData); 
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none"; 
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List15function(){
     displaySortBar1();
@@ -3246,6 +3477,19 @@ function sort1List15function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort1List16function(){
     displaySortBar1();
@@ -3260,6 +3504,19 @@ function sort1List16function(){
 
     liveData=JSON.parse(localStorage.getItem("shoeProdDataLS"));
     sortingFunction(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 
 
@@ -3274,7 +3531,20 @@ function sort4List1function(){
     document.querySelector("#selectSort6").value="Color";
     document.querySelector("#selectSort7").value="Style";
     document.querySelector("#selectSort8").value="Size";
-    sortingFunction1(liveData); 
+    sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+    
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List2function(){
     displaySortBar2(); 
@@ -3288,6 +3558,19 @@ function sort4List2function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List3function(){
     displaySortBar2(); 
@@ -3301,6 +3584,19 @@ function sort4List3function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List4function(){
     displaySortBar2(); 
@@ -3314,6 +3610,19 @@ function sort4List4function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List5function(){
     displaySortBar2(); 
@@ -3327,17 +3636,57 @@ function sort4List5function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List6function(){
     displaySortBar2(); 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List7function(){
     displaySortBar2();
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List8function(){
     displaySortBar2(); 
@@ -3351,6 +3700,19 @@ function sort4List8function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List9function(){
     displaySortBar2(); 
@@ -3364,6 +3726,19 @@ function sort4List9function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List10function(){
     displaySortBar2(); 
@@ -3377,6 +3752,19 @@ function sort4List10function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List11function(){
     displaySortBar2(); 
@@ -3390,12 +3778,24 @@ function sort4List11function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
 }
 function sort4List12function(){
     displaySortBar2();
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
 }
 function sort4List13function(){
     displaySortBar2(); 
@@ -3409,12 +3809,38 @@ function sort4List13function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List14function(){
     displaySortBar2();
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List15function(){
     displaySortBar2(); 
@@ -3428,6 +3854,19 @@ function sort4List15function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List16function(){
     displaySortBar2(); 
@@ -3440,19 +3879,59 @@ function sort4List16function(){
     document.querySelector("#selectSort8").value="Size";
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
-    sortingFunction1(liveData);    
+    sortingFunction1(liveData);  
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none"; 
+    
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List17function(){
     displaySortBar2();
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none"; 
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List18function(){
     displaySortBar2();
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List19function(){
     displaySortBar2(); 
@@ -3466,12 +3945,38 @@ function sort4List19function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List20function(){
     displaySortBar2();
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 function sort4List21function(){
     displaySortBar2(); 
@@ -3485,6 +3990,19 @@ function sort4List21function(){
 
     liveData=JSON.parse(localStorage.getItem("asosMensClothingDataLs"));
     sortingFunction1(liveData);
+    menHomePageBlock1.style.display="none";
+    menHomePageBlock2.style.display="none";
+    menHomePageBlock3.style.display="none";
+    menHomePageBlock4.style.display="none";
+    menHomePageBlock5.style.display="none";
+    menHomePageBlock6.style.display="none";
+
+    womenHomePageBlock1.style.display="none";
+    womenHomePageBlock2.style.display="none";
+    womenHomePageBlock3.style.display="none";
+    womenHomePageBlock4.style.display="none";
+    womenHomePageBlock5.style.display="none";
+    womenHomePageBlock6.style.display="none";
 }
 
 
@@ -3494,6 +4012,7 @@ document.querySelector("#asosMenHeading").addEventListener("click",womenMenSwapF
 
 
 function menWomenSwapFun(){
+    container.innerHTML="";
     let a=document.querySelector("#asosWomenHeading");
     let b=document.querySelector("#asosMenHeading");
     a.style.backgroundColor="#525050";
@@ -3501,10 +4020,11 @@ function menWomenSwapFun(){
     let c="selectedWomen";
     localStorage.setItem("menWomenSwitchTabLS",c);
     arr=womensClothingData;
-    displayShoeMen1(arr);
+    window.location.href="headPart.html";
 }
 
 function womenMenSwapFun(){
+    container.innerHTML="";
     let a=document.querySelector("#asosWomenHeading");
     let b=document.querySelector("#asosMenHeading");
     b.style.backgroundColor="#525050";
@@ -3512,12 +4032,68 @@ function womenMenSwapFun(){
     let c="selectedMen";
     localStorage.setItem("menWomenSwitchTabLS",c);
     arr=mensClothingData;
-    displayShoeMen3(arr);
+    window.location.href="headPart.html";
+    // menHomePageBlock1.style.display="block";
+    // menHomePageBlock2.style.display="block";
+    // menHomePageBlock3.style.display="block";
+    // menHomePageBlock4.style.display="block";
+    // menHomePageBlock5.style.display="block";
+    // menHomePageBlock6.style.display="block";
 }
 
 function takeUserToProductFun(arr,index){
     let newArr=[];
     newArr.push(arr[index]);
     localStorage.setItem("selectedItemJumpToProduct",JSON.stringify(newArr));
-    window.location.href="";
+    window.location.href="product.html";
+}
+
+
+
+document.querySelector("#asosUserInfoHeading").addEventListener("mouseover",userInfoDispFunction);
+
+function userInfoDispFunction(){
+    document.querySelector("#asosUserInfoDispHeading").innerHTML="";
+    event.preventDefault();
+    let div1=document.createElement("div");
+    let div2=document.createElement("div");
+
+    let p1=document.createElement("p");
+    let p2=document.createElement("p");
+    let p3=document.createElement("p");
+
+    let List1=document.createElement("ul");
+    let sel1=document.createElement("li");
+    let sel2=document.createElement("li");
+    let sel3=document.createElement("li");
+    let sel4=document.createElement("li");
+
+
+    p1.innerText="Hi user Name";
+    p2.innerText="Sign out";
+    p3.innerText="X";
+    p3.setAttribute("id","crossUserInfoHeading");
+
+
+    List1.append(sel1,sel2,sel3,sel4);
+    div2.append(List1);
+    div1.append(p1,p2,p3);
+
+    
+
+    sel1.innerText="My Account";
+    sel2.innerText="My order";
+    sel3.innerText="Returns Information";
+    sel4.innerText="Contact Preferance";
+
+    document.querySelector("#asosUserInfoDispHeading").append(div1,div2);
+}
+// document.querySelector("#crossUserInfoHeading").addEventListener("click",userInfoBlockDispFunction);
+document.querySelector("#asosUserSearchHeading").addEventListener("mouseover",userInfoBlockDispFunction);
+document.querySelector("#asosUserFavHeading").addEventListener("mouseover",userInfoBlockDispFunction);
+document.querySelector("#asosUserInfoDispHeading").addEventListener("mouseleave",userInfoBlockDispFunction);
+document.querySelector("#headPart1").addEventListener("mouseleave",userInfoBlockDispFunction);
+
+function userInfoBlockDispFunction(){
+    document.querySelector("#asosUserInfoDispHeading").innerHTML="";
 }
