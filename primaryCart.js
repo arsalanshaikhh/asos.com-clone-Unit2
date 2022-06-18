@@ -185,3 +185,36 @@ pArr.forEach(function (elem, index) {
     fDvi.append(tPri, tPar, tCol, tSiz, sel, rev);
     dvi.append(tImg, fDvi);
 });
+
+
+
+function code() {
+
+    if (document.querySelector("#promo").value == "asos010") {
+        let get = document.createElement("div");
+        document.querySelector("#off").innerHTML = "";
+        get.innerText = "Congratulations! 16% off on current order"
+        get.style.border = "1px solid black"
+        get.style.padding = "3%"
+        get.style.marginTop = "5%"
+        get.style.marginBottom = "-5%"
+
+        document.querySelector("#off").append(get)
+
+    } else {
+
+        let get = document.createElement("div");
+        document.querySelector("#off").innerHTML = "";
+        get.innerText = "No offer available"
+        get.style.border = "1px solid black"
+        get.style.padding = "3%"
+        get.style.marginTop = "5%"
+        get.style.marginBottom = "-5%"
+
+        document.querySelector("#off").append(get)
+
+    }
+
+}
+
+
