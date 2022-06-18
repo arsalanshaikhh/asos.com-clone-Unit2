@@ -6,6 +6,27 @@ let pArr = JSON.parse(localStorage.getItem("pData")) || [
         color: "Black",
         size: "UK 8.5",
     },
+    {
+        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+        price: 32,
+        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
+        color: "Black",
+        size: "UK 8.5",
+    },
+    {
+        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+        price: 32,
+        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
+        color: "Black",
+        size: "UK 8.5",
+    },
+    {
+        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+        price: 32,
+        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
+        color: "Black",
+        size: "UK 8.5",
+    },
 ];
 
 
@@ -68,6 +89,8 @@ pArr.forEach(function (elem, index) {
 
     var sel = document.createElement("Select");
     sel.setAttribute("id", "MySelect");
+    sel.addEventListener("change", check)
+    check()
     document.body.appendChild(sel);
 
     var opt = document.createElement("option");
@@ -193,51 +216,82 @@ pArr.forEach(function (elem, index) {
 
 
 
-function code() {
-
-    let fill = document.querySelector("#MySelect").value
-    console.log(fill);
-
-    if (fill != "") {
+function check() {
+    let oArr = (document.querySelectorAll("#MySelect"))
+    // console.log(document.querySelectorAll("#MySelect"))
 
 
-        if (document.querySelector("#promo").value == "asos010") {
-            let get = document.createElement("div");
-            document.querySelector("#off").innerHTML = "";
-            get.innerText = "Congratulations! 16% off on current order"
-            get.style.border = "0px solid black"
-            get.style.padding = "3%"
-            get.style.marginTop = "5%"
-            get.style.marginBottom = "-5%"
-            get.style.backgroundColor = "rgb(193, 255, 193)"
+    let count = 0;
+    for (let i = 0; i < document.querySelectorAll("#MySelect").length; i++) {
 
-            document.querySelector("#off").append(get)
+        if (oArr[i].value == "") {
+            oArr[i].style.border = "1px solid red"
+            count++
+            document.querySelector("#c2>button").style.backgroundColor = "rgb(142, 142, 142)";
+            document.querySelector("#c2>button").disabled = true;
+            document.querySelector("#c2>button").style.cursor = "not-allowed";
 
-            // let dis = document.querySelector("#z3>div:nth-child(2)").innerText;
-            // console.log(dis);
-
-
-        } else {
-
-            let get = document.createElement("div");
-            document.querySelector("#off").innerHTML = "";
-            get.innerText = "No offer available"
-            get.style.border = "0px solid black"
-            get.style.padding = "3%"
-            get.style.marginTop = "5%"
-            get.style.marginBottom = "-5%"
-            get.style.backgroundColor = "rgb(255, 178, 178)"
-
-            document.querySelector("#off").append(get)
-
+            document.querySelector("#pay>button").style.backgroundColor = "rgb(142, 142, 142)";
+            document.querySelector("#pay>button").disabled = true;
+            document.querySelector("#pay>button").style.cursor = "not-allowed";
         }
-    } else {
+        else {
+            oArr[i].style.border = "1px solid black"
+        }
+    }
+    if (count == 0) {
+        document.querySelector("#c2>button").style.backgroundColor = "black";
+        document.querySelector("#c2>button").disabled = false;
+        document.querySelector("#pay>button").style.cursor = "pointer";
 
-        document.querySelector("#MySelect").style.border = "1.5px solid red"
+        document.querySelector("#pay>button").style.backgroundColor = "black";
+        document.querySelector("#pay>button").disabled = false;
+        document.querySelector("#pay>button").style.cursor = "pointer";
 
     }
-
 }
+
+
+
+
+
+function code() {
+
+
+
+    if (document.querySelector("#promo").value == "asos010") {
+        let get = document.createElement("div");
+        document.querySelector("#off").innerHTML = "";
+        get.innerText = "Congratulations! 16% off on current order"
+        get.style.border = "0px solid black"
+        get.style.padding = "3%"
+        get.style.marginTop = "5%"
+        get.style.marginBottom = "-5%"
+        get.style.backgroundColor = "rgb(193, 255, 193)"
+
+        document.querySelector("#off").append(get)
+
+        // let dis = document.querySelector("#z3>div:nth-child(2)").innerText;
+        // console.log(dis);
+
+
+    } else {
+
+        let get = document.createElement("div");
+        document.querySelector("#off").innerHTML = "";
+        get.innerText = "No offer available"
+        get.style.border = "0px solid black"
+        get.style.padding = "3%"
+        get.style.marginTop = "5%"
+        get.style.marginBottom = "-5%"
+        get.style.backgroundColor = "rgb(255, 178, 178)"
+
+        document.querySelector("#off").append(get)
+
+    }
+}
+
+
 
 
 function payIt() {

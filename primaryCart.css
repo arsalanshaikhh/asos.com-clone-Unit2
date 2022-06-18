@@ -176,6 +176,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     border-right: 1px solid black;
+    /* color:rgb(142, 142, 142); */
   }
 
   #item{
