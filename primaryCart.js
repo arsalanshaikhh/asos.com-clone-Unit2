@@ -1,20 +1,14 @@
-let pArr = JSON.parse(localStorage.getItem("pData"))
-// || [
-//     {
-//         img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-//         price: 32,
-//         name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
-//         color: "Black",
-//         size: "UK 8.5",
-//     },
-//     {
-//         img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-//         price: 64,
-//         name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
-//         color: "Black",
-//         size: "UK 8.5",
-//     },
-// ];
+let pArr = JSON.parse(localStorage.getItem("pData")) || [
+    {
+        img: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
+        price: 32,
+        name: "ASOS DESIGN Boots, Style - Chelsea Leather (Body fit)",
+        color: "Black",
+        size: "UK 8.5",
+    },
+];
+
+
 // localStorage.setItem("logInUserData", JSON.stringify(elem));
 
 // let info = {
