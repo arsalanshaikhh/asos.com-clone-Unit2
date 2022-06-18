@@ -224,7 +224,16 @@ function check() {
     let count = 0;
     for (let i = 0; i < document.querySelectorAll("#MySelect").length; i++) {
 
-        if (oArr[i].value == "") {
+
+        // if (oArr[document.querySelectorAll("#MySelect").length].value == "") {
+
+        // }
+
+        if (oArr[i].value !== "") {
+            oArr[i].style.border = "3px solid black"
+        }
+
+        else {
             oArr[i].style.border = "1px solid red"
             document.querySelector("#c2>button").style.backgroundColor = "rgb(142, 142, 142)";
             document.querySelector("#c2>button").disabled = true;
@@ -239,9 +248,6 @@ function check() {
             document.querySelector("#m1>div").style.fontWeight = "100";
             document.querySelector("#m1>div").style.fontSize = "15px";
             count++
-        }
-        else {
-            oArr[i].style.border = "3px solid black"
         }
     }
     if (count == 0) {
@@ -258,7 +264,23 @@ function check() {
     }
 }
 
+let oArr = (document.querySelectorAll("#MySelect"))
 
+if (oArr.length == 1) {
+    oArr[0].style.border = "1px solid red"
+    document.querySelector("#c2>button").style.backgroundColor = "rgb(142, 142, 142)";
+    document.querySelector("#c2>button").disabled = true;
+    document.querySelector("#c2>button").style.cursor = "not-allowed";
+
+    document.querySelector("#pay>button").style.backgroundColor = "rgb(142, 142, 142)";
+    document.querySelector("#pay>button").disabled = true;
+    document.querySelector("#pay>button").style.cursor = "not-allowed";
+
+    document.querySelector("#m1>div").innerText = "! Select Quantity";
+    document.querySelector("#m1>div").style.color = "red";
+    document.querySelector("#m1>div").style.fontWeight = "100";
+    document.querySelector("#m1>div").style.fontSize = "15px";
+}
 
 
 
