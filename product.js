@@ -180,7 +180,7 @@ function func() {
             // localStorage.removeItem("pData");
             arr.push(obj);
             localStorage.setItem("pData", JSON.stringify(arr));
-            // window.location.href = "primaryCart.html"
+            window.location.href = "primaryCart.html"
         }
 
 
