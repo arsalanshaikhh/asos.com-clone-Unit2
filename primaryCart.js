@@ -171,11 +171,12 @@ pArr.forEach(function (elem, index) {
         document.querySelector("#z1>div:nth-child(2)").innerText =
             "£ " + sum.toFixed(2);
 
+
+
         document.querySelector("#z3>div:nth-child(2)").innerText =
             "£ " + (sum + 5).toFixed(2);
         document.querySelector("#z3>div:nth-child(2)").style.fontSize = "20px"
         document.querySelector("#z3>div:nth-child(2)").style.fontweight = "600"
-
 
 
 
@@ -233,3 +234,8 @@ function code() {
 }
 
 
+function payIt() {
+
+    window.open("payment.html", '_blank');
+
+}

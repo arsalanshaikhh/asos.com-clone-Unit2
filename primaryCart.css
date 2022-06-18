@@ -213,3 +213,14 @@ cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
+
+#pay>button{
+  background-color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  border: 0px solid black;
+  padding:2%;
+}
+#pay>button:hover{
+  background-color: rgb(39, 39, 39);
+  cursor: pointer;
+  }
