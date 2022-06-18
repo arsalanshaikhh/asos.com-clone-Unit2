@@ -170,8 +170,18 @@ function func() {
 
         // console.log(arr);
         localStorage.setItem("pData", JSON.stringify(arr));
+        document.getElementById("ple").innerText = "Added to bag"
 
-        // window.location.href = "https://mail.google.com/mail/u/1/#inbox"
+        document.getElementById("ple").style.padding = "2%"
+        document.getElementById("ple").style.backgroundColor = "rgb(224, 255, 224)";
+
+        document.querySelector("#bu").innerText = "Proceed to Cart"
+        document.querySelector("#bu").addEventListener("click", opened)
+
+        function opened() {
+
+            window.location.href = "primaryCart.html"
+        }
 
 
 
