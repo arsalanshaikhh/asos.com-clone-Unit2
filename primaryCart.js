@@ -182,9 +182,9 @@ pArr.forEach(function (elem, index) {
 
     }
     if (pArr.length == 1) {
-        document.querySelector("#m1>p").innerText = pArr.length + " Item";
+        document.querySelector("#m1>p").innerText = "Cart - " + (pArr.length) + " Item";
     } else if (pArr.length !== 0) {
-        document.querySelector("#m1>p").innerText = pArr.length + " Items";
+        document.querySelector("#m1>p").innerText = "Cart - " + (pArr.length) + " Items";
     }
 
     fDvi.append(tPri, tPar, tCol, tSiz, sel, rev);
@@ -195,37 +195,45 @@ pArr.forEach(function (elem, index) {
 
 function code() {
 
-    if (document.querySelector("#promo").value == "asos010") {
-        let get = document.createElement("div");
-        document.querySelector("#off").innerHTML = "";
-        get.innerText = "Congratulations! 16% off on current order"
-        get.style.border = "0px solid black"
-        get.style.padding = "3%"
-        get.style.marginTop = "5%"
-        get.style.marginBottom = "-5%"
-        get.style.backgroundColor = "rgb(193, 255, 193)"
+    let fill = document.querySelector("#MySelect").value
+    console.log(fill);
+
+    if (fill != "") {
 
 
+        if (document.querySelector("#promo").value == "asos010") {
+            let get = document.createElement("div");
+            document.querySelector("#off").innerHTML = "";
+            get.innerText = "Congratulations! 16% off on current order"
+            get.style.border = "0px solid black"
+            get.style.padding = "3%"
+            get.style.marginTop = "5%"
+            get.style.marginBottom = "-5%"
+            get.style.backgroundColor = "rgb(193, 255, 193)"
 
-        // document.querySelector("#z3>div:nth-child(2)").innerText =
-        //     "£ " + (0.84 * (sum + 5)).toFixed(2);
-        // document.querySelector("#z3>div:nth-child(2)").style.fontSize = "20px"
-        // document.querySelector("#z3>div:nth-child(2)").style.fontweight = "600"
+            document.querySelector("#off").append(get)
 
-        document.querySelector("#off").append(get)
+            // let dis = document.querySelector("#z3>div:nth-child(2)").innerText;
+            // console.log(dis);
 
+
+        } else {
+
+            let get = document.createElement("div");
+            document.querySelector("#off").innerHTML = "";
+            get.innerText = "No offer available"
+            get.style.border = "0px solid black"
+            get.style.padding = "3%"
+            get.style.marginTop = "5%"
+            get.style.marginBottom = "-5%"
+            get.style.backgroundColor = "rgb(255, 178, 178)"
+
+            document.querySelector("#off").append(get)
+
+        }
     } else {
 
-        let get = document.createElement("div");
-        document.querySelector("#off").innerHTML = "";
-        get.innerText = "No offer available"
-        get.style.border = "0px solid black"
-        get.style.padding = "3%"
-        get.style.marginTop = "5%"
-        get.style.marginBottom = "-5%"
-        get.style.backgroundColor = "rgb(255, 178, 178)"
-
-        document.querySelector("#off").append(get)
+        document.querySelector("#MySelect").style.border = "1.5px solid red"
 
     }
 
@@ -233,6 +241,8 @@ function code() {
 
 
 function payIt() {
+
+
 
     window.open("payment.html", '_blank');
 
