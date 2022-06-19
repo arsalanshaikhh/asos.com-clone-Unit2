@@ -1,18 +1,18 @@
 *{
-    color: black;
-    font-family:Arial, Helvetica, sans-serif;
+    /* color: black; */
+    /* font-family:Arial, Helvetica, sans-serif; */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-align: center;
+    /* text-align: center; */
 }
-#firsta{ 
+#femaleHomePageBlock1{ 
    width: 100%;
    background-color: #fd5c7c;
    text-align: center;
    
 }
-#firsta>h1{
+#femaleHomePageBlock1>h1{
     width: 49%;
     margin: auto;
     line-height: 100%;
@@ -21,7 +21,14 @@
     cursor: pointer;
     font-size: 50px;
 }
- #firsta>button:nth-child(1){
+#femaleHomePageBlock1>p{
+    color: #4d4a4a;
+    padding: 10px;
+    font-size: 11px;
+    margin-top: -7px;
+    margin-bottom: 15px;
+}
+#femaleHomePageBlock1>button:nth-child(1){
     font-size: 30px;
     font-weight: bold;
     margin: 25px 0px 10px 0px;
@@ -30,7 +37,7 @@
     background-color: white;
     cursor: pointer;
 }
-#firsta>div{
+#femaleHomePageBlock1>div{
     width: 75%;
     
     border: 1px solid transparent;
@@ -42,26 +49,24 @@
     grid-template-rows: auto;
     gap: 1.5%;
 }
-#firsta>div>div>img{
-    width: 100%;
-}
-#firsta>div>div{
+#femaleHomePageBlock1>div>div{
     cursor: pointer;
     transition: transform .4s;
     background-color: white; 
 }
-#firsta>p{
-    color: #4d4a4a;
-    padding: 10px;
-}
-#firsta>div>div:hover{
+#femaleHomePageBlock1>div>div:hover{
     transform: scale(1.05);
 }
-#firsta>div>div>p{
+#femaleHomePageBlock1>div>div>img{
+    width: 100%;
+}
+#femaleHomePageBlock1>div>div>p{
     margin-bottom: 15px;
     margin-top: 15px;
 
 }
+
+
 #but{
     font-size: 18px;
     font-weight: bold;
@@ -75,29 +80,25 @@
     color: white;
     transition: all 500ms ease;
 }
-#first>p{
-    font-size: 11px;
-    margin-top: -7px;
-    margin-bottom: 15px;
-}
-.bgi{
+
+#femaleHomePageBlock2{
     width: 80%;
     height: 70vh;
     margin: auto;
     margin-top: 50px;
-    background-image: url("https://content.asos-media.com/-/media/homepages/mw/2022/june/06/hero/mw1_dt_hero_1258x600.jpg");
+    background-image: url("https://content.asos-media.com/-/media/homepages/ww/2022/june/06/hero/hero_1258x600.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-bottom: 20px;
-
+    text-align: center;
 }
-.bgi:hover{
+#femaleHomePageBlock2:hover{
     cursor: pointer;
 }
-.bgi>div{
+#femaleHomePageBlock2>div{
     width: 30%;
     height: 100%;
     margin: auto;
@@ -105,18 +106,16 @@
     flex-direction: column;
 
 }
-
-.bgi>div>h3{
-    width:100%;
+#femaleHomePageBlock2>div>h1{
+    width:70%;
     background-color: white;
-    text-align: center;
     font-size: 40px;
     margin: auto;
     margin-bottom: 0px;
     font-weight: 800;
     padding: 1px 20px;
 }
-.bgi>div>p{
+#femaleHomePageBlock2>div>p{
     background-color: white;
     margin: auto;
     margin-top: 10px;
@@ -126,13 +125,15 @@
     font-weight: bold;
     
 }
-.bgi>div>p:hover{
+#femaleHomePageBlock2>div>p:hover{
     cursor: pointer;
     background-color: black;
     color: white;
     transition: all 500ms ease;
 }
-#thirdb{
+
+
+#femaleHomePageBlock3{
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
@@ -141,27 +142,33 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     gap: 10px;
+    text-align: center;
 }
-#thirdb>div{
+#femaleHomePageBlock3>div{
     cursor: pointer;
 }
-#thirdb>div>img{
+#femaleHomePageBlock3>div>img{
     width: 100%;
 }
-#thirdbb>div>h4{
+#femaleHomePageBlock3>div>h4{
     margin: 10px;
     margin-top: 20px;
 }
-#thirdb>div>p{
+#femaleHomePageBlock3>div>p{
     margin-bottom: 20px;
 }
-#imga{
+
+
+#femaleHomePageBlock4{
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
     cursor: pointer;
+    text-align: center;
 }
-#pic{
+
+
+#femaleHomePageBlock5{
     width: 70%;
     display: grid;
     margin: auto;
@@ -169,11 +176,12 @@
     grid-template-rows: auto;
     gap: 20px;
     margin-bottom: 40px;
+    text-align: center;
 }
-#pic>div{
+#femaleHomePageBlock5>div{
     cursor: pointer;
 }
-#pic>div>img{
+#femaleHomePageBlock5>div>img{
     width: 100%;
     margin-bottom: 20px;
     border: 10px solid red;
@@ -182,31 +190,34 @@
     border-top-color:#9659ff ;
     border-bottom-color: #fa9db9;
 }
-#pic>div>h1{
+#femaleHomePageBlock5>div>h1{
     margin-bottom: 15px;
 }
-#pic>div>p{
+#femaleHomePageBlock5>div>p{
     margin-bottom: 20px;
     font-size: 17px;
     color: #4d4a4a;
 }
-#pic>div>button{
+#femaleHomePageBlock5>div>button{
     font-size: 15px;
     font-weight: bold;
     background-color: white;
     padding: 18px 15px;
     letter-spacing: 1px;
 }
-#pic>div>button:hover{
+#femaleHomePageBlock5>div>button:hover{
     background-color: black;
     color: white;
     cursor: pointer;
     transition: all 600ms ease;
 }
-#td{
+
+
+#femaleHomePageBlock6{
     margin: auto;
+    text-align: center;
 }
-#td>div{
+#femaleHomePageBlock6>div{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -218,6 +229,6 @@
     cursor: pointer;
 
 }
-#td>div>div>img{
+#femaleHomePageBlock6>div>div>img{
     width: 100%;
 }
