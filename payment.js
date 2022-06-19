@@ -19,7 +19,14 @@ function fun2() {
       "src",
       "https://cdn.dribbble.com/users/3475837/screenshots/11442860/media/8d53857df0ecda3b496bed2d012cbfd9.gif"
     );
+
     x.append(y, ab);
+    window.setTimeout(function () {
+      location.href = "headPart.html";
+    }, 6000);
+    let empty = [];
+    localStorage.setItem("pData", JSON.stringify(empty));
+    localStorage.setItem("selectedItemJumpToProduct", JSON.stringify(empty));
   }
 }
 function fun() {
