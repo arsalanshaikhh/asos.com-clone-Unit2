@@ -1,0 +1,139 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#slogo{
+
+    margin: auto;
+    width: 50%;
+    /* height: 60px; */
+    /* border:1px solid black; */
+    display: flex; 
+    justify-content:space-evenly;
+    
+  }
+  
+  #slogo>div{
+      
+      width: 5%;
+      text-decoration: none;
+      /* border:1px solid black; */
+  }
+  
+  #slogo>div>a{
+      color:black;
+  }
+  
+  #slogo>div>img{
+      width: 100%;
+  
+  }
+  
+  #footer{
+      margin:auto;
+      display:flex;
+      width:100%;
+      /* border:1px solid black; */
+      justify-content:space-around;
+      padding-bottom: 2.5%;
+      background-color:#eeeeee;
+      margin-top: 1.5%;
+  }
+  
+  #footer>div{
+      width:20%;
+      /* border:1px solid black; */
+      display:flex;
+      flex-direction: column;
+      background-color:#eeeeee;
+  }
+  
+  #footer>div>h4{
+      background-color:#eeeeee;
+      font-size:14px;
+      font-weight: 700;
+      color:#7a7a7a;
+      padding-top: 7%;
+  }
+  
+  #footer>div>a{
+      font-size:13px;
+  text-decoration:none;
+  color:#7a7a7a;
+  padding-top: 4%;
+  }
+  
+  #footer>div>a:hover{
+      
+      color:rgb(107, 107, 248);
+  }
+  
+  
+  #footer>div>p>img{
+      width:20px;
+  
+  }
+  #footer>div>h4+p{
+      background-color:#eeeeee;
+  }
+  #footer>div>h4+p>b{
+      background-color:#eeeeee;
+      color:#7a7a7a;
+  }
+  #footer>div>h4+p>img{
+      background-color:#eeeeee;
+  }
+  
+  #last{
+      margin:auto;
+      display:flex;
+      height:20px;
+      justify-content:space-between;
+      align-items:center;
+      padding: 0px 20px;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      background-color: #dddddd;
+  }
+  
+  #last>div~div{
+  font-size:11px;
+  background-color: #dddddd;
+  
+  }
+  
+  #last>div>small{
+  background-color: #dddddd;
+  }
+  #last>div{
+  background-color: #dddddd;
+  }
+  
+  
+  #last>div>div>a{
+      text-decoration:none;
+      color:black;
+      background-color: #dddddd;
+  }
+  #last>div>div{
+      text-decoration:none;
+      color:black;
+      background-color: #dddddd;
+  }
+  
+  
+  #last>div>div>a:hover{
+      color:rgb(107, 107, 248);
+  }
+  
+  
+  
+  
+  #last>div~div{
+      display: flex;
+  }
+  
+  #last>div>div:nth-last-child(2){
+    margin-left:7px;
+    margin-right:7px;
+  }
+  
