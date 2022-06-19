@@ -1,19 +1,6 @@
-let theArr = JSON.parse(localStorage.getItem("selectedItemJumpToProduct")) || [
-    {
-        Product: "Boots",
-        Brand: "ASOS DESIGN",
-        ImageUrl: "https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-leather-with-zips/13774536-1-black?$n_320w$&wid=317&fit=constrain",
-        Price: "32",
-        Style: "Chelsea",
-        Color: "Black",
-        Size: "UK 7",
-        BodyFit: "Body fit",
-        Leather: "Leather"
-    }
+let theArr = JSON.parse(localStorage.getItem("selectedItemJumpToProduct")) || [];
 
-];
-
-document.querySelector("#second>h2").innerText = theArr[0].Brand + " " + theArr[0].Product + ", " + "Style -" + " " + theArr[0].Style + " " + theArr[0].Leather + " (" + theArr[0].BodyFit + ") ";
+document.querySelector("#second>h2").innerText = theArr[0].Brand + " " + theArr[0].Product + ", " + "Style -" + " " + theArr[0].Style + " " + " (" + theArr[0].BodyFit + ") ";
 
 document.querySelector("#eur").innerText = "£ " + theArr[0].Price
 
@@ -112,7 +99,7 @@ function hide() {
         let hid = document.querySelector("#hi");
         hid.style.boxShadow = "0px -60px 77px 17px rgba(255,255,255,1)";
 
-        document.querySelector("#more").style.margin = "-400px 0px 0px 0px";
+        document.querySelector("#more").style.margin = "-350px 0px 0px 0px";
 
         let nbut = document.querySelector("#hp")
         nbut.innerText = "SHOW MORE";

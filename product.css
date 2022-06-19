@@ -1,11 +1,12 @@
-*{
+/* *{
 	background-color: white;
 	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+}*/
 
-body{
-	padding-top: 30px;
-}
+#asosProductSeperateDivision{
+	padding-top: 300px 0px;
+	/* position: relative; */
+}  
 /* style */
 #content-wrapper{
 	display: flex;
@@ -23,6 +24,7 @@ width: 75%;
 /* border: 1px solid black; */
 display: flex;
 justify-content: space-between;
+/* position: relative; */
 }
 
 
@@ -75,9 +77,6 @@ margin-bottom: 10%;
 	background-color:#016c3a;
 }
 
-
-
-
 #bag>button:nth-child(2){
   background-color:rgb(226, 226, 226);
 }
@@ -95,6 +94,7 @@ padding: 5px;
 	transform-origin: 50% 65%;
 	transition: transform 2s, filter 3s ease-in-out;
 	filter: brightness(100%);
+	z-index: 2;
   }
   
  #featured:hover {
@@ -226,7 +226,7 @@ font-size: 13px;
    /* border:1px solid black; */
    justify-content:space-between;
    margin-top:5%;
-   
+   /* position: relative; */
 }
 
 #parent2>div{
@@ -234,7 +234,6 @@ font-size: 13px;
 	/* margin:auto; */
 	display: flex;
 	flex-direction: column;
-
 }
 
 #parent2>div>h5{
@@ -253,11 +252,10 @@ font-size: 13px;
     margin:auto;
 	/* border:1px solid black; */
     width: 100%;
-	background-color:white;
+	background-color:rgba(255, 255, 255, 0);
 	opacity: 1;
-	padding-top: 2%;
-	margin: -400px 0px 0px 0px;
-	
+	margin: -350px 0px 0px 0px;
+	position: relative;
 }
 
 #hp{
@@ -282,10 +280,9 @@ font-size: 13px;
 	border-radius:7px;
 	box-shadow: -1px 2px 124px 68px rgba(255,255,255,1);
 	font-weight: 300;
-background-color: #2b1331;
-background-image: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
-margin-bottom: 0.1%;
-
+	background-color: #2b1331;
+	background-image: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
+	margin-bottom: 0.1%;
 }
 #setB{
 	font-weight: 300;
@@ -316,14 +313,14 @@ background-image: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
 	width:75%;
 	display: flex;
 	justify-content:space-between;
-
+	/* position: relative; */
 }
 
 #fi{
 	width:40%;
 	margin-top: 1%;
 	padding-top:2%;
-	/* border:1px solid black; */
+	background-color: white;
 	box-shadow: 74px -58px 74px 0px rgba(255,255,255,1);
 
 }
@@ -364,8 +361,9 @@ background-image: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
 	/* border:1px solid black; */
 	margin-top: 1%;
 	/* height:400px; */
+	background-color: white;
 	box-shadow: -71px -58px 74px 0px rgba(255,255,255,1);
-padding-top: 2%;
+	padding-top: 2%;
 }
 #sec>h5{
 	font-weight: 700;
