@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,900&family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #first{ 
+           width: 100%;
+           background-color: #fd5c7c;
+           text-align: center;
+           
+        }
+        #first>h1{
+            width: 49%;
+            margin: auto;
+            line-height: 100%;
+            font-weight: 900;
+            font-style: italic;
+            cursor: pointer;
+            font-size: 50px;
+        }
+         #first>button:nth-child(1){
+            font-size: 30px;
+            font-weight: bold;
+            margin: 25px 0px 10px 0px;
+            padding: 0.5% 5%;
+            border-radius: 40px;
+            background-color: white;
+            cursor: pointer;
+        }
+        #first>div{
+            width: 75%;
+            
+            border: 1px solid transparent;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(6,15.4%);
+            grid-template-rows: auto;
+            gap: 1.5%;
+        }
+        #first>div>div>img{
+            width: 100%;
+        }
+        #first>div>div{
+            cursor: pointer;
+            transition: transform .4s;
+            background-color: white; 
+        }
+        #first>p{
+            color: #4d4a4a;
+            padding: 10px;
+        }
+        #first>div>div:hover{
+            transform: scale(1.05);
+        }
+        #first>div>div>p{
+            margin-bottom: 15px;
+            margin-top: 15px;
+        
+        }
+        #but{
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0.8% 4%;
+            background-color: white;
+            cursor: pointer;
+            margin: 10px 0px 30px;
+        }
+        #but:hover{
+            background-color: black;
+            color: white;
+            transition: all 500ms ease;
+        }
+        #first>p{
+            font-size: 11px;
+            margin-top: -7px;
+            margin-bottom: 15px;
+        }
+        .bgi{
+            width: 80%;
+            height: 70vh;
+            margin: auto;
+            margin-top: 50px;
+            background-image: url("https://content.asos-media.com/-/media/homepages/ww/2022/june/06/hero/hero_1258x600.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+        }
+        .bgi:hover{
+            cursor: pointer;
+        }
+        .bgi>div{
+            width: 30%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .bgi>div>h1{
+            width:70%;
+            background-color: white;
+            font-size: 40px;
+            margin: auto;
+            margin-bottom: 0px;
+            font-weight: 800;
+            padding: 1px 20px;
+        }
+        .bgi>div>p{
+            background-color: white;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            width: 50%;
+            padding: 10px;
+            font-weight: bold;
+            
+        }
+        .bgi>div>p:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            transition: all 500ms ease;
+        }
+       #third{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+        #third>div{
+            cursor: pointer;
+        }
+        #third>div>img{
+            width: 100%;
+        }
+        #third>div>h4{
+            margin: 10px;
+            margin-top: 20px;
+        }
+        #third>div>p{
+            margin-bottom: 20px;
+        }
+        #imga{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+        #pic{
+            width: 70%;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        #pic>div{
+            cursor: pointer;
+        }
+        #pic>div>img{
+            width: 100%;
+            margin-bottom: 20px;
+            border: 10px solid red;
+            border-left-color:#ff465e;
+            border-right-color: #cafa01;
+            border-top-color:#9659ff ;
+            border-bottom-color: #fa9db9;
+        }
+        #pic>div>h1{
+            margin-bottom: 15px;
+        }
+        #pic>div>p{
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: #4d4a4a;
+        }
+        #pic>div>button{
+            font-size: 15px;
+            font-weight: bold;
+            background-color: white;
+            padding: 18px 15px;
+            letter-spacing: 1px;
+        }
+        #pic>div>button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: all 600ms ease;
+        }
+        #td{
+            margin: auto;
+        }
+        #td>div{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: auto;
+            gap:20px ;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+        }
+        #td>div>div>img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="first">
+        <button>SALE</button>    
+        <h1>UP TO 70% OFF! <br> IT'S CALLED BIG DISCOUNT ENERGY</h1>
+        <div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-plunge-neck-fluffy-mini-dress-in-hot-pink/201624497-1-hotpink?$n_640w$&wid=513&fit=constrain&hei=272&wid=213&bgc=000000" alt="">
+            <p>DRESSES</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/threadbare-cut-out-front-crop-top-in-orange/202048146-1-orange?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>TOPS</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-wide-fit-haven-padded-toe-thong-heeled-sandals-in-green/200732619-4?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>SHOES</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/topshop-paperbag-waist-shorts-in-animal/202466210-1-animal?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>SHORTS & TROUSERS</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-recycled-frame-chunky-square-sunglasses-with-colour-block-bevel/201734940-1-multi?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>ACCESSORIES</p>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/nike-pro-training-zip-front-crop-top-in-blue/201526374-1-blue?$n_640w$&wid=513&fit=constrain&hei=236&wid=185&bgc=000000" alt="">
+            <p>SPORTS BRANDS</p>
+        </div>
+        </div>
+        <button id="but">VIEW ALL</button> 
+        <p>Limited time only. Selected styles marked down as shown.</p>
+   </div>
+   <div class="bgi">
+        <div>
+            <h1>Festi-gal</h1> 
+            <p>SHOP ASOS DESIGN</p>
+        </div>
+   </div>
+   <div id="third">
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/119158763_model_1-(1).jpg" alt="">
+            <h4>ASOS WEEKEND COLLECTIVE</h4>
+            <p>Sunday energy intensifies</p>
+         </div>
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/ww_glam_coords_moment_870x1110.jpg" alt="">
+            <h4>GLAM CO-ORDS</h4>
+            <p>Twin flames</p>
+        </div>
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/220511_vk_asos_shot_04_310-(1).jpg" alt="">
+            <h4>TOPSHOP</h4>
+            <p>You wanna be on Top(shop)</p>
+        </div>
+        <div>
+            <img src="https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/2022-03-17_ord-lb-serum-visual_v3.jpg" alt="">
+            <h4>THE ORDINARY</h4>
+            <p>Anything but</p>
+        </div>
+    </div>
+    <div id="imga">
+        <img src="https://content.asos-media.com/-/media/homepages/unisex/homepages/2022/06_june/pride---banner-1---2022/uk/pride_hp_p1_final_dt_1258_150-v2-new.png" alt="">
+    </div>
+    <div id="pic">
+        <div>
+            <img src="https://images.asos-media.com/products/asos-edition-wrap-front-crop-top-with-open-back-and-tie-in-caramel/201415925-1-cinnamonrose?$n_480w$&wid=476&fit=constrain" alt="">
+            <h1>ASOS EDITION</h1>
+            <p>Material girl</p>
+            <button>SHOP THE BRAND</button>
+        </div>
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-strappy-mini-dress-with-bias-ruffle-detail-in-red/202140436-1-red?$n_480w$&wid=476&fit=constrain" alt="">
+            <h1>SUMMER ROMANCE</h1>
+            <p>Ruffle some feathers</p>
+            <button>SHOP ASOS DESIGN</button>
+        </div>
+    </div>
+    <div id="td" >
+        <h2>TRENDING BRANDS</h2>
+        <div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png" alt="">
+            </div>
+            <div>
+                <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
