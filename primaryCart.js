@@ -16,7 +16,7 @@ let pArr = JSON.parse(localStorage.getItem("pData")) || [
 // }
 
 let info = JSON.parse(localStorage.getItem("logInUserData")) || {
-    email: "aryandev1305@gmail.com"
+    email: "---"
 }
 
 // let info = JSON.parse(localStorage.getItem("logInUserData"));
