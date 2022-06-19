@@ -176,6 +176,10 @@
     left:5%;
     right:5%;
     padding:0px;
+    z-index: 5;
+}
+#headPart4:hover{
+    transition: all;
 }
 
 
@@ -196,3 +200,4 @@
     font-size: large;
     color:#706b6b;
 }
+
