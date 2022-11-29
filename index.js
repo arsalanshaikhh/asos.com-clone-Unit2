@@ -3884,7 +3884,7 @@ function womenMenSwapFun() {
     arr = mensClothingData;
     let passEmptyArray = [];
     localStorage.setItem("selectedItemJumpToProduct", JSON.stringify(passEmptyArray));
-    window.location.href = "headPart.html";
+    window.location.href = "index.html";
     // menHomePageBlock1.style.display="block";
     // menHomePageBlock2.style.display="block";
     // menHomePageBlock3.style.display="block";
@@ -3897,7 +3897,7 @@ function takeUserToProductFun(arr, index) {
     let newArr = [];
     newArr.push(arr[index]);
     localStorage.setItem("selectedItemJumpToProduct", JSON.stringify(newArr));
-    window.location.href = "headPart.html";
+    window.location.href = "index.html";
 }
 
 
